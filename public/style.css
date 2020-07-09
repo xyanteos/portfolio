@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+.mainBody{
+    background: rgb(9,245,219);
+	background: linear-gradient(90deg, rgb(4, 192, 170) 0%, rgba(0,164,255,1) 30%, rgb(139, 221, 248) 100%);
+    text-align: center;
+}
+.body{
+  background-color: hsla(194, 65%, 56%, 0.671);
+  height: 100%;
+  min-height: 80vh;
+  width: 70%;
+  display: inline-block;
+
+}
+.akapit{
+	padding-top: 40px;
+}
+.body p{
+	padding: 15px 50px;
+	font-size: medium;
+}
+
+.LISTAA{
+    list-style-position: inside;
+    list-style-type: disc;
+    padding-left: 4vw;
+    text-align: left;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+.LISTAADIV {
+    width: 80%;
+    margin: 2em auto;
+    background-color: #fdfdff;
+    border-radius: 0.8em;
+    box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+}
+
+
+.header{
+    width:100%;
+	min-height:70px;
+	max-height: 200px;
+    background-image: linear-gradient(black,rgb(124, 124, 124));
+    display: flex;
+}
+.innerHeader{
+    width:70%;
+    height: 100%;
+    display: block;
+	margin: 0 auto;
+}
+.logoContainer{
+    height: 100%;
+    display: table;
+    float: left;
+}
+.logoContainer a:hover{
+    color: darkorange;
+}
+.logoContainer h1,.logoContainer a{
+    color: rgb(0, 140, 255);
+    height: 100%;
+    display: table-cell;
+    text-align:center;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 200;
+}
+.logoContainer span{
+    font-weight: 800;
+}
+.logoContainer img{
+	widows: 25px;
+	height:	25px;
+	padding-top:8;
+}
+.navigation{
+    float: right;
+    height: 100%;
+    color: white;
+}
+.navigation span{
+    height:100%;
+    display: table;
+    float: left;
+    padding: 9% 20px;
+    color: rgb(0, 140, 255);
+}
+.navigation span:hover{
+	cursor: pointer;
+    color: darkorange;
+    font-weight: 800;
+    
+}
+.navigation a li{
+	display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+.projekt {
+    width: 80%;
+    margin: 5em auto;
+    padding: 2em;
+    background-color: #fdfdff;
+    border-radius: 0.8em;
+    box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+}
+
+
+/* ponizej daje efekty shade-owania */
+.image{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.image img{
+    width: 100%;
+    height: 20vh;
+}
+.image::after {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+	display: block;
+	
+    background-image: linear-gradient(to right,  hsla(194, 65%, 56%, 0.671) 5%, transparent 30%);
+  }
+
+.image::before {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    background-image: linear-gradient(to left,  hsla(194, 65%, 56%, 0.671) 5%, transparent 30%);
+  }
+/* nowe zmiany */
+.stopka{
+	padding-top: 40px;
+	  bottom:0;
+	  height: 2vh;
+  }
+.stopka a{
+	color: black;
+	font-weight: 800;
+	font-size: medium;
+  }
+
+.kontaktInfo span{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.kontaktInfo{
+	padding-top: 10vh;
+}
+.kontaktInfo img{
+	width: 30px;
+	height: 30px;
+}
+.kontaktInfoCredentials{
+	padding-top: 2vh;
+}
+
+.kontakt {
+	height: 50vh;
+	font-size: medium;
+}
+
+.bold{
+	font-size: medium;
+	font-weight: 700;
+}
+.projekty{
+	padding-top: 5vh;
+}
+.projekty h2 img{
+    height: 40px;
+    width: 40px;
+}
+.zdjecieDnia{
+    max-width: 100%;
+}
