@@ -19,27 +19,34 @@ class App extends React.Component{
     render(){
 
         return(
+
             <div>
-                <div className="header">
-                    <div className="innerHeader">
-                        <div className="logoContainer">
-                            <h1><a href="https://github.com/xyanteos">Maciej<span> Nowacki</span><br/><img src="https://github.com/fluidicon.png"/>
-                            </a>
-                            </h1>
-                        </div>
-                        <div className="navigation">
+                <main>
+                    <header>
+                        <div className="header">
+                            <div className="innerHeader">
+                                <div className="logoContainer">
+                                    <h1><a href="https://github.com/xyanteos">Maciej<span> Nowacki</span><br/><img src="https://github.com/fluidicon.png"/>
+                                    </a>
+                                    </h1>
+                                </div>
+                                <nav>
+                                    <div className="navigation">
 
-                                    <span onClick={()=>this.zmieniamStrone("StronaGlowna")}>O mnie</span>
-                                    <span onClick={()=>this.zmieniamStrone("Portfolio")}>Portfolio</span>
-                                    <span onClick={()=>this.zmieniamStrone("Kontakt")}>Kontakt</span>
+                                                <span onClick={()=>this.zmieniamStrone("StronaGlowna")}>O mnie</span>
+                                                <span onClick={()=>this.zmieniamStrone("Portfolio")}>Portfolio</span>
+                                                <span onClick={()=>this.zmieniamStrone("Kontakt")}>Kontakt</span>
 
+                                    </div>
+                                </nav>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className="coWyswietlic">
-                    <ZaladujStrone nazwaStrony={this.state.aktualnaStrona}/>
-                </div>
-                
+                    </header>
+                    
+                        <div className="coWyswietlic">
+                            <ZaladujStrone nazwaStrony={this.state.aktualnaStrona}/>
+                        </div>
+                </main>                
             </div>
 
         )

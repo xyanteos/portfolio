@@ -2,19 +2,23 @@
     margin:0;
     padding:0;
     text-decoration: none;
+
 }
+
 .mainBody{
-    background: rgb(9,245,219);
-	background: linear-gradient(90deg, rgb(4, 192, 170) 0%, rgba(0,164,255,1) 30%, rgb(139, 221, 248) 100%);
+    background: rgb(0, 29, 25);
+	background: linear-gradient(90deg, rgb(49, 49, 49) 0%, rgb(222, 224, 224) 30%, rgb(116, 115, 115) 100%);
     text-align: center;
 }
 .body{
-  background-color: hsla(194, 65%, 56%, 0.671);
+  background-color: hsla(196, 15%, 19%, 0.377);
   height: 100%;
   min-height: 80vh;
-  width: 70%;
+  min-width: 40%;
+  max-width: 70%;
   display: inline-block;
-
+  font-weight: lighter; 
+  font-size: 120%;
 }
 .akapit{
 	padding-top: 40px;
@@ -47,17 +51,21 @@
 	max-height: 200px;
     background-image: linear-gradient(black,rgb(124, 124, 124));
     display: flex;
+    align-items: center;
 }
 .innerHeader{
     width:70%;
     height: 100%;
-    display: block;
+    display: flex;
+    float: right;
+    align-items: center;
 	margin: 0 auto;
 }
 .logoContainer{
     height: 100%;
     display: table;
     float: left;
+    flex: 1;
 }
 .logoContainer a:hover{
     color: darkorange;
@@ -132,7 +140,7 @@
     content: '';
 	display: block;
 	
-    background-image: linear-gradient(to right,  hsla(194, 65%, 56%, 0.671) 5%, transparent 30%);
+    background-image: linear-gradient(to right,  hsla(180, 4%, 11%, 0.863) 5%, transparent 30%);
   }
 
 .image::before {
@@ -143,7 +151,7 @@
     bottom: 0;
     content: '';
     display: block;
-    background-image: linear-gradient(to left,  hsla(194, 65%, 56%, 0.671) 5%, transparent 30%);
+    background-image: linear-gradient(to left,  hsla(200, 1%, 56%, 0.774) 5%, transparent 30%);
   }
 /* nowe zmiany */
 .stopka{
@@ -192,4 +200,23 @@
 }
 .zdjecieDnia{
     max-width: 100%;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .body{
+      font-size: 70%;
+      min-width: 100%;
+    }
+    .LISTAADIV{
+        width: 100%;
+        margin: 5vh 0vw;
+    }
+    .LISTAA{
+        width: 100%;
+    }
+    p{
+        text-align: center;
+    }
 }
