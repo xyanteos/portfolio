@@ -194,19 +194,22 @@
 .projekty{
 	padding-top: 5vh;
 }
-.projekty h2 img{
-    height: 40px;
-    width: 40px;
+.projekty  img{
+    max-height: 250px;
+    max-width: 100%;
 }
 .zdjecieDnia{
     max-width: 100%;
 }
-
+#git{
+    max-height: 60px;
+    max-width: 60px;
+}
 
 
 @media only screen and (max-width: 1100px) {
     .body{
-      font-size: 70%;
+      font-size: 85%;
       min-width: 100%;
     }
     .LISTAADIV{
@@ -218,5 +221,12 @@
     }
     p{
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .innerHeader{
+        width: 100%;
+        font-size: 70%;
     }
 }

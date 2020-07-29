@@ -23,8 +23,8 @@ class Portfolio extends React.Component{
                         <div className="projekt">
                             <h1>Projekt Wykorzystania NASA API</h1>
                             <br/>
-                            <img src="NASA_API_ss.png" width="300px" height="250px"/>
-                            <img src="NASA_API_ss2.png" width="300px" height="250px"/>
+                            <img src="NASA_API_ss.png" />
+                            <img src="NASA_API_ss2.png" />
                             <p>
                                 Jest to mój autorski projekt strony dającej wgląd do aktualnych newsów, oraz do bazy danych NASA. Na początku podczas ładowania komponentu 
                                 pobierana jest automatycznie informacja odnośnie zdjęcia dnia. Jest ono wyświetlane wraz z tytułem artykułu oraz krótkim opisem. 
@@ -40,8 +40,8 @@ class Portfolio extends React.Component{
                         <div className="projekt">
                             <h1>Projekt Wykorzystania Youtube API</h1>
                             <br/>
-                            <img src="YT_API_ss.png" width="300px" height="250px"/>
-                            <img src="YT_API_ss2.png" width="300px" height="250px" alt="screenshot"/>
+                            <img src="YT_API_ss.png"/>
+                            <img src="YT_API_ss2.png" alt="screenshot"/>
                             <p>
                                 Projekt ten stworzyliśmy na zajęciach. Działa bardzo podobnie jak zwykła wyszukiwarka Youtube, z małą różnicą wizualną.
                                 Aplikacja wysyła zapytanie do Youtube Data API, po czym wyświetla filmy, ich tytuły i 5 najbardziej trafnych filmów w stosunku do 
@@ -54,7 +54,7 @@ class Portfolio extends React.Component{
                         </div>
 
                         <h2>
-                            Więcej na <a href="https://www.github.com/xyanteos">GitHub<br/><img src="https://github.com/fluidicon.png"/></a>
+                            Więcej na <a href="https://www.github.com/xyanteos">GitHub<br/><img src="https://github.com/fluidicon.png" alt="Github" id="git"/></a>
                         </h2>
     
                         <div className="stopka">

@@ -12,7 +12,7 @@ const Glowna = () =>{
                 </div>
                 <h1>Kim jestem?</h1>
                 <p className="akapit">
-                    Jestem studentem 6 semestru informatyki (Inż.) na uczelni wyższej WSB w Gdańsku ze specjalizacją programowania.
+                    Jestem studentem 7 semestru informatyki (Inż.) na uczelni wyższej WSB w Gdańsku ze specjalizacją programowania.
                     Poprzednio studiowałem elektrotechnikę na Politechnice Gdańskiej, lecz nie był to kierunek w którym mógłbym się spełnić.
                     Od dziecka fascynowały mnie komputery i wszystko co z nimi związane.
                     Uczelnie wyższe pomogły w pewnym stopniu zrozumieć jak te maszyny działają, chociaż moja droga 
