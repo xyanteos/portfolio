@@ -24,7 +24,7 @@ const Glowna = () =>{
                     Z jakimi technologiami miałem styczność?
                 </h2>
                 <p>
-                    Podczas studiów tworzyłem różne projekty. Większość z nich robiłem sam, lecz czasami również współpracowałem z kolegami z roku. Technologie, z jakimi miałem styczność w międzyczasie to między innymi:
+                    Podczas studiów tworzyłem różne projekty. Większość z nich robiłem sam, lecz czasami również współpracowałem z kolegami z roku. Poniżej podaję przykłady technologii, z którymi miałem styczność:
                     <div className="LISTAADIV">
                         <ul className="LISTAA">
                             <li>
@@ -124,7 +124,10 @@ const Glowna = () =>{
                                 Rolki
                             </li>
                             <li>
-                                Podróże/zwiedzanie
+                                Siłownia
+                            </li>
+                            <li>
+                                Podróże, zwiedzanie
                             </li>
                         </ul>
                     </div>
