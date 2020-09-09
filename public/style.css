@@ -19,7 +19,6 @@
   display: inline-block;
   font-weight: lighter; 
   font-size: 120%;
-  border-radius: 0 0 15px 15px;
 }
 .akapit{
 	padding-top: 40px;
@@ -42,20 +41,15 @@
     margin: 2em auto;
     background-color: #fdfdff;
     border-radius: 0.8em;
-    padding-right: 4%;
     box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
 }
 
 
 .header{
-    width:80%;
-    display: flex;
-    margin: auto;
-    margin-top: 1vh;
-    border-radius: 15px;
+    width:100%;
 	min-height:70px;
 	max-height: 200px;
-    background-image: linear-gradient(rgb(49, 49, 49),rgba(122, 120, 120, 0.836));
+    background-image: linear-gradient(black,rgb(124, 124, 124));
     display: flex;
     align-items: center;
     position: sticky;
@@ -217,11 +211,6 @@
 
 
 @media only screen and (max-width: 1100px) {
-    .header{
-        width: 100%;
-        margin-top:0;
-        border-radius: 15px 15px 0 0;
-    }
     .body{
       font-size: 85%;
       min-width: 100%;
@@ -238,9 +227,9 @@
     }
 }
 
-@media only screen and (max-width: 570px){
+@media only screen and (max-width: 500px){
     .innerHeader{
-        width: 90%;
+        width: 100%;
         font-size: 70%;
     }
 }
