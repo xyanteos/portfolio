@@ -18,9 +18,6 @@ const Kontakt = () =>{
                         <img src="pngguru.com.png"/> 
                         <span>(+48) 502-891-350</span>
                     </div>
-
-
-
                 </div>
 
             </div>
