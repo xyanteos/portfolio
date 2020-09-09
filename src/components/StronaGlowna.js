@@ -124,7 +124,7 @@ const Glowna = () =>{
                                 Rolki
                             </li>
                             <li>
-                                Podróże/zwiedzanie
+                                Podróże, zwiedzanie
                             </li>
                         </ul>
                     </div>
