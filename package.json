@@ -2,6 +2,7 @@
   "name": "zabawa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://xyanteos.github.io/REACT-site-project/index.html",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -15,6 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
