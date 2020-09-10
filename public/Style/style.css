@@ -7,11 +7,15 @@
 
 .mainBody{
     background: rgb(0, 29, 25);
-	background: linear-gradient(90deg, rgb(49, 49, 49) 0%, rgb(222, 224, 224) 30%, rgb(116, 115, 115) 100%);
+    background: linear-gradient(90deg, rgb(49, 49, 49) 0%, rgb(222, 224, 224) 30%, rgb(116, 115, 115) 100%);
+    background-image: url(../background-mountains.jpg);
+
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
 }
 .body{
-  background-color: hsla(196, 15%, 19%, 0.377);
+  background-color: hsla(197, 19%, 33%, 0.877);
   height: 100%;
   min-height: 80vh;
   min-width: 40%;
@@ -20,6 +24,7 @@
   display: inline-block;
   font-weight: lighter; 
   font-size: 120%;
+  /* text-shadow: 0px 1px 0px lightgrey; */
 }
 .akapit{
 	padding-top: 40px;
@@ -34,6 +39,7 @@
     list-style-type: disc;
     padding-left: 4vw;
     text-align: left;
+    padding-right: 4%;
     padding-top: 4vh;
     padding-bottom: 4vh;
 }
