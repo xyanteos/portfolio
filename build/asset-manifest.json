@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/REACT-site-project/index.html/static/css/main.84a44ccb.chunk.css",
-    "main.js": "/REACT-site-project/index.html/static/js/main.eaab911b.chunk.js",
-    "main.js.map": "/REACT-site-project/index.html/static/js/main.eaab911b.chunk.js.map",
-    "runtime-main.js": "/REACT-site-project/index.html/static/js/runtime-main.352980e4.js",
-    "runtime-main.js.map": "/REACT-site-project/index.html/static/js/runtime-main.352980e4.js.map",
-    "static/js/2.54d0c32e.chunk.js": "/REACT-site-project/index.html/static/js/2.54d0c32e.chunk.js",
-    "static/js/2.54d0c32e.chunk.js.map": "/REACT-site-project/index.html/static/js/2.54d0c32e.chunk.js.map",
-    "index.html": "/REACT-site-project/index.html/index.html",
-    "precache-manifest.80fb988decf97aac1013936d340e6cc2.js": "/REACT-site-project/index.html/precache-manifest.80fb988decf97aac1013936d340e6cc2.js",
-    "service-worker.js": "/REACT-site-project/index.html/service-worker.js",
-    "static/css/main.84a44ccb.chunk.css.map": "/REACT-site-project/index.html/static/css/main.84a44ccb.chunk.css.map",
-    "static/js/2.54d0c32e.chunk.js.LICENSE.txt": "/REACT-site-project/index.html/static/js/2.54d0c32e.chunk.js.LICENSE.txt"
+    "main.css": "/REACT-site-project/static/css/main.84a44ccb.chunk.css",
+    "main.js": "/REACT-site-project/static/js/main.eaab911b.chunk.js",
+    "main.js.map": "/REACT-site-project/static/js/main.eaab911b.chunk.js.map",
+    "runtime-main.js": "/REACT-site-project/static/js/runtime-main.22518de5.js",
+    "runtime-main.js.map": "/REACT-site-project/static/js/runtime-main.22518de5.js.map",
+    "static/js/2.54d0c32e.chunk.js": "/REACT-site-project/static/js/2.54d0c32e.chunk.js",
+    "static/js/2.54d0c32e.chunk.js.map": "/REACT-site-project/static/js/2.54d0c32e.chunk.js.map",
+    "index.html": "/REACT-site-project/index.html",
+    "precache-manifest.62b2c51a3b9765297bb497ce18dbe984.js": "/REACT-site-project/precache-manifest.62b2c51a3b9765297bb497ce18dbe984.js",
+    "service-worker.js": "/REACT-site-project/service-worker.js",
+    "static/css/main.84a44ccb.chunk.css.map": "/REACT-site-project/static/css/main.84a44ccb.chunk.css.map",
+    "static/js/2.54d0c32e.chunk.js.LICENSE.txt": "/REACT-site-project/static/js/2.54d0c32e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.352980e4.js",
+    "static/js/runtime-main.22518de5.js",
     "static/js/2.54d0c32e.chunk.js",
     "static/css/main.84a44ccb.chunk.css",
     "static/js/main.eaab911b.chunk.js"
