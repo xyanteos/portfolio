@@ -44,7 +44,7 @@ class NasaAPI extends React.Component{
                     <h3>
                         Pucture of the day:
                     </h3>
-                    <img src={this.state.picOfTheDay} alt="Picture of the day" className="zdjecieDnia"/>
+                    <img src={this.state.picOfTheDay} alt="" className="zdjecieDnia"/>
                     <p>
                         {this.state.messageOfTheDay}
                     </p>

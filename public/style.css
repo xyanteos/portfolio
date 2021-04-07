@@ -7,7 +7,6 @@
 
 
 
-
 .mainBody{
     background: rgb(0, 29, 25);
     /* background: linear-gradient(90deg, rgb(49, 49, 49) 0%, rgb(222, 224, 224) 30%, rgb(116, 115, 115) 100%); */
@@ -65,7 +64,7 @@
 .LISTAADIV {
     width: 80%;
     margin: 2em auto;
-    background-color: #dddada;
+    background-color: #cfcfcf;
     border-radius: 0.8em;
     box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
 }
@@ -153,7 +152,7 @@
     width: 80%;
     margin: 5em auto;
     padding: 2em;
-    background-color: #fdfdff;
+    background-color: #cfcfcf;
     border-radius: 0.8em;
     box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
 }
@@ -250,8 +249,8 @@
 	padding-top: 5vh;
 }
 .projekty  img{
-    max-height: 250px;
-    max-width: 100%;
+    max-height: 230px;
+    max-width: 80%;
 }
 .zdjecieDnia{
     max-width: 100%;
@@ -282,11 +281,32 @@
     p{
         text-align: center;
     }
+
+    .stopka p{
+        min-width: fit-content;
+    }
+
 }
 
 @media only screen and (max-width: 570px){
     .innerHeader{
         width: 90%;
         font-size: 70%;
+    }
+    .projekt p{
+        font-size: 0.8rem;
+        padding: 0;
+    }
+
+    .akapit{
+        padding: 0.6rem;
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    .body img{
+        max-height: 10rem;
+    }
+    .bold{
+        margin-top: 10rem;
     }
 }

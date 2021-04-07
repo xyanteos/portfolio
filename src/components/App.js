@@ -1,5 +1,4 @@
 import React from 'react'
-import Api from '../Api'
 import ZaladujStrone from './ZaladujStrone'
 
 
@@ -27,7 +26,7 @@ class App extends React.Component{
                         <div className="header">
                             <div className="innerHeader">
                                 <div className="logoContainer">
-                                    <h1><a href="https://github.com/xyanteos">Maciej<span> Nowacki</span><br/><img src="https://github.com/fluidicon.png"/>
+                                    <h1><a href="https://github.com/xyanteos">Maciej<span> Nowacki</span><br/><img src="https://github.com/fluidicon.png" alt="GitHub"/>
                                     </a>
                                     </h1>
                                 </div>

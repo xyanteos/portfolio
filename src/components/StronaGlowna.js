@@ -8,7 +8,7 @@ const Glowna = () =>{
 
             <div className="body">
                 <div className="image">
-                    <img src="tlo321.png"/>
+                    <img src="tlo321.png" alt="mojeZdj"/>
                 </div>
                 <h1>Kim jestem?</h1>
                 <p className="akapit">

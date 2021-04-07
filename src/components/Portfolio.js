@@ -22,13 +22,18 @@ class Portfolio extends React.Component{
                         <h1>Przykładowe projekty</h1>
                         <div className="projekt">
                             <h1>Projekt CRUD w stacku MERN</h1>
-                            <p>Projekt mojego autorstwa wykorzystujący pełną funkcjonalność CRUD w postaci serwisu do przesyłania postów na wzór facebook-owego walla. W projekcie zawarte są funkcjonalności: rejestracja użytkowników, login i autoryzacja za pomocą JWT, możliwość wrzucania nowych postów, możliwość zmiany hasła oraz maila użytkownika, usuwanie konta i logout. Jestem w trakcie dodawania aktualizacji w czasie rzeczywistym za pomocą websocket, lecz mogę za prośbą udostępnić projekt ze stanem aktualnym.</p>
+                            <img src= "postsLogin.png" alt="Logowanie" />
+                            <img src="postsListing.png" alt="Posty" />
+                            <p>Projekt mojego autorstwa wykorzystujący pełną funkcjonalność CRUD w postaci serwisu do przesyłania postów na wzór Twittera lub facebook-owego walla. 
+                                W projekcie zawarte są funkcjonalności: rejestracja użytkowników, login i autoryzacja za pomocą JWT, 
+                                możliwość wrzucania nowych postów, możliwość zmiany hasła oraz maila użytkownika, usuwanie konta i wylogowanie. 
+                                Jestem w trakcie dodawania aktualizacji w czasie rzeczywistym za pomocą websocket, lecz mogę za prośbą udostępnić projekt ze stanem teraźniejszym.</p>
                         </div>
                         <div className="projekt">
                             <h1>Projekt Wykorzystania NASA API</h1>
                             <br/>
-                            <img src="NASA_API_ss.png" />
-                            <img src="NASA_API_ss2.png" />
+                            <img src="NASA_API_ss.png" alt = "nasAPI" />
+                            <img src="NASA_API_ss2.png" alt = "nasAPI2" />
                             <p>
                                 Jest to mój autorski projekt strony dającej wgląd do aktualnych newsów, oraz do bazy danych NASA. Na początku podczas ładowania komponentu 
                                 pobierana jest automatycznie informacja odnośnie zdjęcia dnia. Jest ono wyświetlane wraz z tytułem artykułu oraz krótkim opisem. 
@@ -46,7 +51,7 @@ class Portfolio extends React.Component{
                         <div className="projekt">
                             <h1>Projekt Wykorzystania Youtube API</h1>
                             <br/>
-                            <img src="YT_API_ss.png"/>
+                            <img src="YT_API_ss.png" alt = "ap" />
                             <img src="YT_API_ss2.png" alt="screenshot"/>
                             <p>
                                 Projekt ten stworzyliśmy na zajęciach. Działa bardzo podobnie jak zwykła wyszukiwarka Youtube, z małą różnicą wizualną.
@@ -54,8 +59,8 @@ class Portfolio extends React.Component{
                                 wyszukiwanej frazy.
                             </p>
                             <br/>
-                            <button onClick={()=>this.dodajPodstrone("YouTubeAPI")}>Sprawdź demo!</button>
-                            <button onClick={()=>this.dodajPodstrone("")}>Zwiń</button>  
+                            <button className = "ui button"onClick={()=>this.dodajPodstrone("YouTubeAPI")}>Sprawdź demo!</button>
+                            <button className= "ui button" onClick={()=>this.dodajPodstrone("")}>Zwiń</button>  
                             {this.state.podstrona==="YouTubeAPI" ? <ZaladujStrone nazwaStrony={this.state.podstrona}/> : null}       
                         </div>
 
