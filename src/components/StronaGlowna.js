@@ -1,5 +1,6 @@
 import React from 'react'
-
+import mirage from './Pictures/tlo321.png'
+const linked = 'https://www.linkedin.com/in/maciej-nowacki-12b4581b3/'
 
 const Glowna = () =>{
     return(
@@ -8,13 +9,11 @@ const Glowna = () =>{
 
             <div className="body">
                 <div className="image">
-                    <img src="tlo321.png" alt="mojeZdj"/>
+                    <img src={mirage} alt="mojeZdj"/>
                 </div>
                 <h1>Kim jestem?</h1>
                 <p className="akapit">
-                    Jestem ambitnym developerem z niekomercyjnym doświadczeniem w technologii MERN. Podczas studiów tworzyłem różne projekty grupowe w środowisku SCRUM-owym. Największym z nich był projekt wysoce skalowalnego rozwiązania stacji pomiarowej IoT z brokerem wiadomości MQTT, k8s, bazą danych PostgreSQL oraz stroną internetową reprezentującą zebrane dane. Projekt był tworzony z wykorzystaniem procesów SRE. W projekcie byłem odpowiedzialny za zaprojektowanie węzła IoT. 
-                    <br/>
-                    <span className="bold">Aktualnie jestem w trakcie poszukiwania pracy, aby zdobyć doświadczenie i wiedzę programistyczną w środowisku biznesowym.</span>
+                    Jestem ambitnym developerem z rocznym doświadczeniem komercyjnym w QA przy CI aplikacji webowej oraz niekomercyjnym doświadczeniem w technologii MERN. W ramach projektu inżynierskiego uczestniczyłem w przygotowaniu stacji pomiarowej IoT z brokerem wiadomości MQTT, k8s, bazą danych PostgreSQL oraz stroną internetową reprezentującą zebrane dane. Projekt był tworzony z wykorzystaniem procesów SRE. Byłem odpowiedzialny za zaprojektowanie skalowalnego węzła IoT. 
                 </p>
 
                 <h2>
@@ -24,13 +23,16 @@ const Glowna = () =>{
                     <div className="LISTAADIV">
                         <ul className="LISTAA">
                             <li>
-                                MERN - full stack
+                                C#
                             </li>
                             <li>
-                                Linux
+                                MERN stack
                             </li>
                             <li>
-                                Unity / C#
+                                Windows/Linux
+                            </li>
+                            <li>
+                                Unity
                             </li>
                             <li>
                                 Android Studio
@@ -47,25 +49,25 @@ const Glowna = () =>{
                     <div className="LISTAADIV">
                         <ul className="LISTAA">
                             <li>
-                                C# - Visual Studio, OOP, WPF, WindowsForms App, Console App, linq, delegatory, NUnit - testy jednostkowe, Selenium.
+                                C# - Visual Studio, OOP, WPF, WindowsForms App, Console App, linq, delegatory, fabryki obiektów, NUnit - testy jednostkowe, Selenium.
                             </li>
                             <li>
-                                Strony Internetowe - React.js, HTML, SCSS, RWD, JavaScript, Node.js, express.js, CMS (Joomla, Wordpress).
+                                Strony Internetowe - HTML, CSS (SCSS) , JavaScript, ES6, RWD, React.js, Node.js.
                             </li>
                             <li>
-                                IoT - Raspberry Pi (projekt inżynierski), protokół MQTT.
+                                IoT - Raspberry Pi + protokół MQTT.
                             </li>
                             <li>
-                                Środowisko Linux - Bash, Shell, Nginx, Apache, FTP, SSH, fail2ban, [...]
+                                Środowisko Linux - Bash, Shell, Cron, Nginx, Apache, FTP, SSH, fail2ban, [...]
                             </li>
                             <li>
                                 Java - Android Studio (aplikacje na Androida z wykorzystaniem API), IntelliJ, OOP.
                             </li>
                             <li>
-                                Maszyny Wirtualne - w tym: VirtualBox, AzureVM, Google Compute Engine, AWS.
+                                Maszyny Wirtualne / Chmura - w tym: VirtualBox, AzureVM, Google Compute Engine, AWS.
                             </li>
                             <li>
-                                CI/CD - Git - GitHub, Markdown.
+                                Git, GitLab, GitHub.
                             </li>
                             <li>
                                 AD - Windows server 2012r2, Linux CentOS.
@@ -77,13 +79,13 @@ const Glowna = () =>{
                                 Python - Pycharm, programownie funkcyjne.
                             </li>
                             <li>
-                                Bazy danych - SQL, Diagramy ERD, MongoDB.           
+                                Bazy danych - SQL, MySql, Diagramy ERD, MongoDB.           
                             </li>
                             <li>
                                 Unity Game Engine - podstawy.
                             </li>
                             <li>
-                                Docker, Kubernetes, Swarm - teoretyczne zagadnienia odnośnie logiki działania oraz przypadki użycia, a także korzyści wynikające ze stosowania tych technologii.
+                                Docker, docker compose
                             </li>
                             <li>
                                 Inżynieria Oprogramowania - modele oraz metodyki w konkretnych przypadkach.
@@ -127,7 +129,7 @@ const Glowna = () =>{
                     </div>
 
 
-                    Zabicie czasu:
+                    Czas wolny:
 
                     <div className="LISTAADIV">
                         <ul className="LISTAA">
@@ -143,7 +145,7 @@ const Glowna = () =>{
 
                 <div className="stopka">
                     <p>
-                        Made by <a href="https://www.facebook.com/1431627220249093" className="madeBy">Maciej Nowacki</a>
+                        Made by <a href={linked} className="madeBy">Maciej Nowacki</a>
                     </p>
                 </div>
             </div>

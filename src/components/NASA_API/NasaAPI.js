@@ -1,7 +1,7 @@
 import React from 'react'
 import SearchBar from './SearchBar'
-import Nasa from '../../Api'
 import ItemList from './ItemList'
+import axios from 'axios'
 
 
 const request = "https://api.nasa.gov/planetary/apod?api_key=tLIyPZSx4Ohfdq4BSj4H9lQmka5Fv3Ln5qlhtgty"
@@ -15,7 +15,7 @@ class NasaAPI extends React.Component{
     }
     
     componentDidMount = () =>{
-        Nasa.get(request)
+        axios.get(request)
         .then((res) => {
             console.log(res)
             this.setState({picOfTheDay:res.data.url})
@@ -26,7 +26,7 @@ class NasaAPI extends React.Component{
         })
     }
     onTermSubmit = (term) =>{
-        Nasa.get(`${prefix}/search?q=${term}`)
+        axios.get(`${prefix}/search?q=${term}`)
         .then((res) =>{
             console.log(res)
             this.setState({items:res.data.collection.items})

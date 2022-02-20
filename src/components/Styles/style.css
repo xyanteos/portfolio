@@ -2,15 +2,12 @@
     margin:0;
     padding:0;
     text-decoration: none;
-
 }
-
-
 
 .mainBody{
     background: rgb(0, 29, 25);
     /* background: linear-gradient(90deg, rgb(49, 49, 49) 0%, rgb(222, 224, 224) 30%, rgb(116, 115, 115) 100%); */
-    background-image: url("./Background.jpg");
+    background-image: url("../Pictures/Background.jpg");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -21,7 +18,7 @@
   background-color: hsla(197, 19%, 33%, 0.877);
   height: 100%;
   min-height: 80vh;
-  min-width: 40%;
+  min-width: 70vw;
   max-width: 70%;
   border-radius: 0 0 15px 15px;
   display: inline-block;
@@ -29,7 +26,6 @@
   font-size: 120%;
   /* text-shadow: 0px 1px 0px lightgrey; */
 }
-
 .coWyswietlic{
     text-align: center;
     padding: 0;
@@ -103,6 +99,7 @@
     display: table;
     float: left;
     flex: 1;
+    padding-top: 0.5rem;
 }
 .logoContainer a:hover{
     color: darkorange;
@@ -191,11 +188,14 @@
     background-image: linear-gradient(to left,  hsla(200, 1%, 56%, 0.774) 5%, transparent 30%);
   }
 /* nowe zmiany */
+.stronaGlowna, .portfolio{
+    padding-bottom: 5vh;
+}
 .stopka{
 	padding-top: 40px;
     margin-top: 2vw;
-	  bottom:0;
-	  height: 2vh;
+	bottom: 1vh;
+	height: 2vh;
   }
 
 .stopka p {
@@ -204,8 +204,7 @@
     max-width: 10vw;
     align-self: center;
     margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 2rem;
     border-radius: 5rem;
 }
 
@@ -263,7 +262,7 @@
 
 @media only screen and (max-width: 1100px) {
     .body{
-      font-size: 85%;
+
       min-width: 100%;
     }
     .header{
@@ -281,7 +280,14 @@
     p{
         text-align: center;
     }
-
+    .projekt{
+        width: 100%;
+    }
+    .projekt .zawartoscStrony{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
     .stopka p{
         min-width: fit-content;
         width: 15vw;
@@ -289,10 +295,14 @@
 
 }
 
-@media only screen and (max-width: 570px){
+@media only screen and (max-width: 610px){
+    .body{
+        font-size: 85%;
+        min-width: 100%;
+      }
     .innerHeader{
         width: 90%;
-        font-size: 70%;
+        font-size: 90%;
     }
     .projekt p{
         font-size: 0.8rem;
@@ -309,5 +319,13 @@
     }
     .bold{
         margin-top: 10rem;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .innerHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }

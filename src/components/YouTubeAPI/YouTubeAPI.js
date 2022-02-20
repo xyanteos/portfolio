@@ -1,8 +1,8 @@
 import React from 'react'
 import SearchBar from './SearchBar'
-import youtube from '../../Api'
 import VideoList from './VideoList'
 import VideoDetail from './VideoDetail'
+import axios from 'axios'
 
 class YouTubeAPI extends React.Component{
     state = {
@@ -21,7 +21,7 @@ class YouTubeAPI extends React.Component{
     }
 
     onTermSubmit = (term) =>{
-        youtube.get("https://www.googleapis.com/youtube/v3/search",{
+        axios.get("https://www.googleapis.com/youtube/v3/search",{
             params: {
                 q: term,
                 part: "snippet",

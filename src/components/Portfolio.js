@@ -1,6 +1,12 @@
 import React from 'react'
 import ZaladujStrone from './ZaladujStrone'
-
+import logowanie from './Pictures/postsLogin.png'
+import posty from './Pictures/postsListing.png'
+import youtube1 from './Pictures/YT_API_ss.png'
+import youtube2 from './Pictures/YT_API_ss2.png'
+import nasa1 from './Pictures/NASA_API_ss.png'
+import nasa2 from './Pictures/NASA_API_ss2.png'
+const linked = 'https://www.linkedin.com/in/maciej-nowacki-12b4581b3/'
 
 class Portfolio extends React.Component{
     state={
@@ -22,8 +28,8 @@ class Portfolio extends React.Component{
                         <h1>Przykładowe projekty</h1>
                         <div className="projekt">
                             <h1>Projekt CRUD w stacku MERN</h1>
-                            <img src= "postsLogin.png" alt="Logowanie" />
-                            <img src="postsListing.png" alt="Posty" />
+                            <img src={logowanie} alt="Logowanie" />
+                            <img src={posty} alt="Posty" />
                             <p>Projekt mojego autorstwa wykorzystujący pełną funkcjonalność CRUD w postaci serwisu do przesyłania postów na wzór Twittera lub facebook-owego walla. 
                                 W projekcie zawarte są funkcjonalności: rejestracja użytkowników, login i autoryzacja za pomocą JWT, 
                                 możliwość wrzucania nowych postów, możliwość zmiany hasła oraz maila użytkownika, usuwanie konta i wylogowanie. 
@@ -32,8 +38,8 @@ class Portfolio extends React.Component{
                         <div className="projekt">
                             <h1>Projekt Wykorzystania NASA API</h1>
                             <br/>
-                            <img src="NASA_API_ss.png" alt = "nasAPI" />
-                            <img src="NASA_API_ss2.png" alt = "nasAPI2" />
+                            <img src={nasa1} alt = "nasAPI" />
+                            <img src={nasa2} alt = "nasAPI2" />
                             <p>
                                 Jest to mój autorski projekt strony dającej wgląd do aktualnych newsów, oraz do bazy danych NASA. Na początku podczas ładowania komponentu 
                                 pobierana jest automatycznie informacja odnośnie zdjęcia dnia. Jest ono wyświetlane wraz z tytułem artykułu oraz krótkim opisem. 
@@ -51,15 +57,15 @@ class Portfolio extends React.Component{
                         <div className="projekt">
                             <h1>Projekt Wykorzystania Youtube API</h1>
                             <br/>
-                            <img src="YT_API_ss.png" alt = "ap" />
-                            <img src="YT_API_ss2.png" alt="screenshot"/>
+                            <img src={youtube1} alt = "ap" />
+                            <img src={youtube2} alt="screenshot"/>
                             <p>
                                 Projekt ten stworzyliśmy na zajęciach. Działa bardzo podobnie jak zwykła wyszukiwarka Youtube, z małą różnicą wizualną.
                                 Aplikacja wysyła zapytanie do Youtube Data API, po czym wyświetla filmy, ich tytuły i 5 najbardziej trafnych filmów w stosunku do 
                                 wyszukiwanej frazy.
                             </p>
                             <br/>
-                            <button className = "ui button"onClick={()=>this.dodajPodstrone("YouTubeAPI")}>Sprawdź demo!</button>
+                            <button className = "ui button" onClick={()=>this.dodajPodstrone("YouTubeAPI")}>Sprawdź demo!</button>
                             <button className= "ui button" onClick={()=>this.dodajPodstrone("")}>Zwiń</button>  
                             {this.state.podstrona==="YouTubeAPI" ? <ZaladujStrone nazwaStrony={this.state.podstrona}/> : null}       
                         </div>
@@ -70,7 +76,7 @@ class Portfolio extends React.Component{
     
                         <div className="stopka">
                             <p>
-                                Made by <a href="https://www.facebook.com/1431627220249093" className="madeBy">Maciej Nowacki</a>
+                                Made by <a href={linked} className="madeBy">Maciej Nowacki</a>
                             </p>
                         </div>
                     </div>
