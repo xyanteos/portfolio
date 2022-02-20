@@ -18,6 +18,9 @@ class Portfolio extends React.Component{
         this.setState({podstrona:props})
     }
 
+    redirectToPages = () =>{
+        window.location.href="https://xyanteos.github.io/authenticatedPosts/"
+    }
 
     render(){
         return(
@@ -31,9 +34,12 @@ class Portfolio extends React.Component{
                             <img src={logowanie} alt="Logowanie" />
                             <img src={posty} alt="Posty" />
                             <p>Projekt mojego autorstwa wykorzystujący pełną funkcjonalność CRUD w postaci serwisu do przesyłania postów na wzór Twittera lub facebook-owego walla. 
-                                W projekcie zawarte są funkcjonalności: rejestracja użytkowników, login i autoryzacja za pomocą JWT, 
-                                możliwość wrzucania nowych postów, możliwość zmiany hasła oraz maila użytkownika, usuwanie konta i wylogowanie. 
-                                Jestem w trakcie dodawania aktualizacji w czasie rzeczywistym za pomocą websocket, lecz mogę za prośbą udostępnić projekt ze stanem teraźniejszym.</p>
+                                Strona jest napisana w stylu single-page application. W projekcie zawarte są funkcjonalności: rejestracja użytkowników, autoryzacja za pomocą JWT,
+                                edycja danych użytkownika, usuwanie konta oraz dodawanie, edycja i usuwanie postów.
+                                Funkcjonalnością, której na razie brakuje jest aktualizacja w czasie rzeczywistym za pomocą Web Socketów, 
+                                co w tej chwili obszedłem odświeżając stronę przy każdej zmianie.
+                            </p>
+                            <button className="ui button" onClick={()=>window.location.href="https://xyanteos.github.io/authenticatedPosts/"}>Zobacz!</button>
                         </div>
                         <div className="projekt">
                             <h1>Projekt Wykorzystania NASA API</h1>
