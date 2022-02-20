@@ -13,7 +13,7 @@ const Glowna = () =>{
                 </div>
                 <h1>Kim jestem?</h1>
                 <p className="akapit">
-                    Jestem ambitnym developerem z rocznym doświadczeniem komercyjnym w QA przy CI aplikacji webowej oraz niekomercyjnym doświadczeniem w technologii MERN. W ramach projektu inżynierskiego uczestniczyłem w przygotowaniu stacji pomiarowej IoT z brokerem wiadomości MQTT, k8s, bazą danych PostgreSQL oraz stroną internetową reprezentującą zebrane dane. Projekt był tworzony z wykorzystaniem procesów SRE. Byłem odpowiedzialny za zaprojektowanie skalowalnego węzła IoT. 
+                    Jestem ambitnym developerem z rocznym doświadczeniem komercyjnym w QA przy CI/CD aplikacji webowej oraz niekomercyjnym doświadczeniem w technologii MERN. W ramach projektu inżynierskiego uczestniczyłem w przygotowaniu stacji pomiarowej IoT z brokerem wiadomości MQTT, k8s, bazą danych PostgreSQL oraz stroną internetową reprezentującą zebrane dane. Projekt był tworzony z wykorzystaniem procesów SRE. Byłem odpowiedzialny za zaprojektowanie skalowalnego węzła IoT. 
                 </p>
 
                 <h2>
