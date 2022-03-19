@@ -11,16 +11,31 @@ const Glowna = () =>{
                 <div className="image">
                     <img src={mirage} alt="mojeZdj"/>
                 </div>
-                <h1>Kim jestem?</h1>
-                <p className="akapit">
-                    Jestem ambitnym developerem z rocznym doświadczeniem komercyjnym w QA przy CI/CD aplikacji webowej oraz niekomercyjnym doświadczeniem w technologii MERN. W ramach projektu inżynierskiego uczestniczyłem w przygotowaniu stacji pomiarowej IoT z brokerem wiadomości MQTT, k8s, bazą danych PostgreSQL oraz stroną internetową reprezentującą zebrane dane. Projekt był tworzony z wykorzystaniem procesów SRE. Byłem odpowiedzialny za zaprojektowanie skalowalnego węzła IoT. 
+                <h1 className='text-focus-in'>
+                    Kim jestem?
+                </h1>
+                <p className="akapit tracking-in-expand-fwd-bottom">
+                    Jestem ambitnym developerem z rocznym doświadczeniem komercyjnym w QA przy CD aplikacji webowej w firmie Sii. W pracy wykorzystuję: 
+                    C#, Selenium, GitHub, RDP, SSH, Windows, Linux i inne.                   
+                    Do moich codziennych obowiązków należą takie zagadnienia, jak: 
+                    <br/>Tworzenie Test Case-ów, pisanie testów automatycznych, dokumentacja, fixowanie istniejących testów, 
+                    utrzymanie środowisk testowych oraz Code Review.<br/>Posiadam również niekomercyjne doświadczenie w technologii MERN. 
                 </p>
-
-                <h2>
+                <p className='akapit tracking-in-expand-fwd-bottom'>
+                    W ramach projektu inżynierskiego uczestniczyłem w przygotowaniu stacji pomiarowej IoT z brokerem wiadomości MQTT, 
+                    k8s, bazą danych PostgreSQL oraz stroną internetową reprezentującą zebrane dane. Projekt był tworzony z wykorzystaniem procesów SRE. 
+                    Byłem odpowiedzialny za zaprojektowanie skalowalnego węzła IoT, a dokładniej za przygotowanie generatora danych przesyłanych do brokera wiadomości MQTT. 
+                </p>
+                <p className='akapit tracking-in-expand-fwd-bottom'>
+                    Aktualnie poza pracą biorę udział w projekcie Radon prowadzonym pod czujnym okiem Pana Profesora Cezarego Orłowskiego we współpracy z WSB oraz IBM. 
+                    Pomagam w procesie wytwarzania rozwiązania IoT do pobierania pomiarów pierwiastka Radon z powietrza. Rozwiązanie ma działać na zasadzie plug and play.
+                    Dotychczas przygotowałem klienta Node.js odbierającego dane zebrane uprzednio w brokerze wiadomości kafka i 
+                    zapisującego te dane do - również przeze mnie przygotowanej - bazy MySql. Całość działa w docker-compose.
+                </p>
+                <h2 className='text-focus-in'>
                     W jakich technologiach dobrze się czuję?
                 </h2>
-                
-                    <div className="LISTAADIV">
+                    <div className="LISTAADIV tracking-in-expand-fwd-bottom">
                         <ul className="LISTAA">
                             <li>
                                 C#
@@ -39,14 +54,10 @@ const Glowna = () =>{
                             </li>
                         </ul>
                     </div>
-
-
-                <h2>
+                <h2 className='text-focus-in'>
                     Z jakimi technologiami miałem styczność?
                 </h2>
-                
-                    
-                    <div className="LISTAADIV">
+                    <div className="LISTAADIV tracking-in-expand-fwd-bottom">
                         <ul className="LISTAA">
                             <li>
                                 C# - Visual Studio, OOP, WPF, WindowsForms App, Console App, linq, delegatory, fabryki obiektów, NUnit - testy jednostkowe, Selenium.
@@ -95,16 +106,10 @@ const Glowna = () =>{
                             </li>
                         </ul>
                     </div>
-
-
-
-                
-                <h2>
-                    Hobby?
-                </h2>
-                
+                <h2 className='text-focus-in'>
                     Rekreacja:
-                    <div className="LISTAADIV">
+                </h2>
+                    <div className="LISTAADIV tracking-in-expand-fwd-bottom">
 
                         <ul className="LISTAA">
                             <li>
@@ -127,13 +132,11 @@ const Glowna = () =>{
                             </li>
                         </ul>
                     </div>
-
-
-                    Czas wolny:
-
-                    <div className="LISTAADIV">
+                    <h2 className='text-focus-in'>
+                        Czas wolny:
+                    </h2>
+                    <div className="LISTAADIV tracking-in-expand-fwd-bottom">
                         <ul className="LISTAA">
-
                             <li>
                                 Książki Fantasy
                             </li>
@@ -142,16 +145,13 @@ const Glowna = () =>{
                             </li>
                         </ul>
                     </div>
-
                 <div className="stopka">
                     <p>
                         Made by <a href={linked} className="madeBy">Maciej Nowacki</a>
                     </p>
                 </div>
             </div>
-
         </div>
-
     )
 }
 

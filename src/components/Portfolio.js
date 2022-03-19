@@ -27,19 +27,19 @@ class Portfolio extends React.Component{
             <div className="portfolio">
     
                 <div className="body">
-                    <div className="projekty">
+                    <div className="projekty text-focus-in-fast">
                         <h1>Przykładowe projekty</h1>
                         <div className="projekt">
                             <h1>Projekt CRUD w stacku MERN</h1>
-                            <img src={logowanie} alt="Logowanie" />
-                            <img src={posty} alt="Posty" />
+                            <img src={logowanie} alt="Logowanie" className='text-focus-in-fast'/>
+                            <img src={posty} alt="Posty" className='text-focus-in-fast' />
                             <p>Projekt mojego autorstwa wykorzystujący pełną funkcjonalność CRUD w postaci serwisu do przesyłania postów na wzór Twittera lub facebook-owego walla. 
                                 Strona jest napisana w stylu single-page application. W projekcie zawarte są funkcjonalności: rejestracja użytkowników, autoryzacja za pomocą JWT,
                                 edycja danych użytkownika, usuwanie konta oraz dodawanie, edycja i usuwanie postów.
                                 Funkcjonalnością, której na razie brakuje jest aktualizacja w czasie rzeczywistym za pomocą Web Socketów, 
                                 co w tej chwili obszedłem odświeżając stronę przy każdej zmianie.
                             </p>
-                            <button className="ui button" onClick={()=>window.location.href="https://xyanteos.github.io/authenticatedPosts/"}>Zobacz!</button>
+                            <button className="ui button text-focus-in-fast" onClick={()=>window.location.href="https://xyanteos.github.io/authenticatedPosts/"}>Zobacz!</button>
                         </div>
                         <div className="projekt">
                             <h1>Projekt Wykorzystania NASA API</h1>
@@ -61,7 +61,7 @@ class Portfolio extends React.Component{
                         </div>
 
                         <div className="projekt">
-                            <h1>Projekt Wykorzystania Youtube API</h1>
+                            <h1 className='text-focus-in-fast'>Projekt Wykorzystania Youtube API</h1>
                             <br/>
                             <img src={youtube1} alt = "ap" />
                             <img src={youtube2} alt="screenshot"/>
