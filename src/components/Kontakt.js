@@ -18,6 +18,8 @@ const Kontakt = () =>{
                         <br/>
                         <p>Lub</p>
                         <img src={phoneIcon} alt="phone"/> 
+                        <br/>
+                        <span><a href='tel:502891350'>Call me</a></span>
                         <span>(+48) 502-891-350</span>
                     </div>
                 </div>
