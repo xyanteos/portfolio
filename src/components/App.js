@@ -1,7 +1,6 @@
 import React from 'react'
 import ZaladujStrone from './ZaladujStrone'
 
-
 class App extends React.Component{
     state={
         aktualnaStrona:""
@@ -11,15 +10,13 @@ class App extends React.Component{
         // console.log(jaka)
         this.setState({aktualnaStrona:jaka});
     }
+
     componentDidMount(){
         this.setState({aktualnaStrona:"StronaGlowna"})
     }
-    
 
     render(){
-
         return(
-
             <div>
                 <main>
                     <header>
@@ -32,25 +29,21 @@ class App extends React.Component{
                                 </div>
                                 <nav>
                                     <div className="navigation">
-
                                                 <span onClick={()=>this.zmieniamStrone("StronaGlowna")}>O mnie</span>
-                                                <span onClick={()=>this.zmieniamStrone("Portfolio")}>Portfolio</span>
+                                                <span onClick={()=>this.zmieniamStrone("Portfolio")}>Projekty</span>
                                                 <span onClick={()=>this.zmieniamStrone("Kontakt")}>Kontakt</span>
-
                                     </div>
                                 </nav>
                             </div>
                         </div>
                     </header>
-                    
                         <div className="coWyswietlic">
                             <ZaladujStrone nazwaStrony={this.state.aktualnaStrona}/>
                         </div>
                 </main>                
             </div>
-
         )
-
     }
 }
+
 export default App
