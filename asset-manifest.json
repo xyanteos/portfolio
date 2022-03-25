@@ -1,29 +1,22 @@
 {
   "files": {
-    "main.css": "/REACT-site-project/static/css/main.01b6f2cb.chunk.css",
-    "main.js": "/REACT-site-project/static/js/main.157fe103.chunk.js",
-    "main.js.map": "/REACT-site-project/static/js/main.157fe103.chunk.js.map",
-    "runtime-main.js": "/REACT-site-project/static/js/runtime-main.02e852c3.js",
-    "runtime-main.js.map": "/REACT-site-project/static/js/runtime-main.02e852c3.js.map",
-    "static/js/2.11d73b08.chunk.js": "/REACT-site-project/static/js/2.11d73b08.chunk.js",
-    "static/js/2.11d73b08.chunk.js.map": "/REACT-site-project/static/js/2.11d73b08.chunk.js.map",
+    "main.css": "/REACT-site-project/static/css/main.6162089b.css",
+    "main.js": "/REACT-site-project/static/js/main.2415202c.js",
+    "static/media/YT_API_ss.png": "/REACT-site-project/static/media/YT_API_ss.1b22a7e7f60358fa7a32.png",
+    "static/media/NASA_API_ss2.png": "/REACT-site-project/static/media/NASA_API_ss2.ec37947cdfea5365e5fb.png",
+    "static/media/YT_API_ss2.png": "/REACT-site-project/static/media/YT_API_ss2.ffb5c22753e82082ddeb.png",
+    "static/media/tlo321.png": "/REACT-site-project/static/media/tlo321.c22543f1b0cce3ad7c16.png",
+    "static/media/Background.jpg": "/REACT-site-project/static/media/Background.a73528d9bb44d49fc5a2.jpg",
+    "static/media/NASA_API_ss.png": "/REACT-site-project/static/media/NASA_API_ss.b723361102f9ed2bd27b.png",
+    "static/media/pngguru.com.png": "/REACT-site-project/static/media/pngguru.com.3756de46fd5225f39e02.png",
+    "static/media/postsLogin.png": "/REACT-site-project/static/media/postsLogin.5560c8ae2e4cb7a49916.png",
+    "static/media/postsListing.png": "/REACT-site-project/static/media/postsListing.ed70eb95ab048a2a87d2.png",
     "index.html": "/REACT-site-project/index.html",
-    "static/css/main.01b6f2cb.chunk.css.map": "/REACT-site-project/static/css/main.01b6f2cb.chunk.css.map",
-    "static/js/2.11d73b08.chunk.js.LICENSE.txt": "/REACT-site-project/static/js/2.11d73b08.chunk.js.LICENSE.txt",
-    "static/media/style.css": "/REACT-site-project/static/media/Background.a73528d9.jpg",
-    "static/media/NASA_API_ss.b7233611.png": "/REACT-site-project/static/media/NASA_API_ss.b7233611.png",
-    "static/media/NASA_API_ss2.ec37947c.png": "/REACT-site-project/static/media/NASA_API_ss2.ec37947c.png",
-    "static/media/YT_API_ss.1b22a7e7.png": "/REACT-site-project/static/media/YT_API_ss.1b22a7e7.png",
-    "static/media/YT_API_ss2.ffb5c227.png": "/REACT-site-project/static/media/YT_API_ss2.ffb5c227.png",
-    "static/media/pngguru.com.3756de46.png": "/REACT-site-project/static/media/pngguru.com.3756de46.png",
-    "static/media/postsListing.ed70eb95.png": "/REACT-site-project/static/media/postsListing.ed70eb95.png",
-    "static/media/postsLogin.5560c8ae.png": "/REACT-site-project/static/media/postsLogin.5560c8ae.png",
-    "static/media/tlo321.c22543f1.png": "/REACT-site-project/static/media/tlo321.c22543f1.png"
+    "main.6162089b.css.map": "/REACT-site-project/static/css/main.6162089b.css.map",
+    "main.2415202c.js.map": "/REACT-site-project/static/js/main.2415202c.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.02e852c3.js",
-    "static/js/2.11d73b08.chunk.js",
-    "static/css/main.01b6f2cb.chunk.css",
-    "static/js/main.157fe103.chunk.js"
+    "static/css/main.6162089b.css",
+    "static/js/main.2415202c.js"
   ]
 }
