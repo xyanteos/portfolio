@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.7f41be67.css",
-    "main.js": "/portfolio/static/js/main.ba34b90f.js",
+    "main.js": "/portfolio/static/js/main.3997c707.js",
+    "static/media/BuyMain.png": "/portfolio/static/media/BuyMain.c5a5d33e9a14eacbe41c.png",
     "static/media/YT_API_ss.png": "/portfolio/static/media/YT_API_ss.1b22a7e7f60358fa7a32.png",
     "static/media/NASA_API_ss2.png": "/portfolio/static/media/NASA_API_ss2.ec37947cdfea5365e5fb.png",
     "static/media/YT_API_ss2.png": "/portfolio/static/media/YT_API_ss2.ffb5c22753e82082ddeb.png",
+    "static/media/BuyRoom.png": "/portfolio/static/media/BuyRoom.29344c446e86e657df1f.png",
     "static/media/tlo321.png": "/portfolio/static/media/tlo321.c22543f1b0cce3ad7c16.png",
     "static/media/Background.jpg": "/portfolio/static/media/Background.a73528d9bb44d49fc5a2.jpg",
     "static/media/NASA_API_ss.png": "/portfolio/static/media/NASA_API_ss.b723361102f9ed2bd27b.png",
     "static/media/pngguru.com.png": "/portfolio/static/media/pngguru.com.3756de46fd5225f39e02.png",
     "static/media/postsLogin.png": "/portfolio/static/media/postsLogin.5560c8ae2e4cb7a49916.png",
     "static/media/postsListing.png": "/portfolio/static/media/postsListing.ed70eb95ab048a2a87d2.png",
+    "static/media/docker-compose.png": "/portfolio/static/media/docker-compose.aac711a46df565fa081c.png",
     "index.html": "/portfolio/index.html",
     "main.7f41be67.css.map": "/portfolio/static/css/main.7f41be67.css.map",
-    "main.ba34b90f.js.map": "/portfolio/static/js/main.ba34b90f.js.map"
+    "main.3997c707.js.map": "/portfolio/static/js/main.3997c707.js.map"
   },
   "entrypoints": [
     "static/css/main.7f41be67.css",
-    "static/js/main.ba34b90f.js"
+    "static/js/main.3997c707.js"
   ]
 }
