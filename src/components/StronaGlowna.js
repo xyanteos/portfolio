@@ -15,11 +15,11 @@ const Glowna = () =>{
                     Kim jestem?
                 </h1>
                 <p className="akapit tracking-in-expand-fwd-bottom">
-                    Jestem ambitnym developerem z rocznym doświadczeniem komercyjnym w QA przy CD aplikacji webowej w firmie Sii. W pracy wykorzystuję: 
-                    C#, Selenium, GitHub, RDP, SSH, Windows, Linux i inne.                   
+                    Jestem ambitnym developerem z dwuletnim doświadczeniem komercyjnym w QA aplikacji webowej w firmie Sii. W pracy wykorzystuję: 
+                    C#, Selenium, Visual Studio, GitHub, RDP, SSH, Windows, Linux i inne.                   
                     Do moich codziennych obowiązków należą takie zagadnienia, jak: 
-                    <br/>Tworzenie Test Case-ów, pisanie testów automatycznych, dokumentacja, fixowanie istniejących testów, 
-                    utrzymanie środowisk testowych oraz Code Review.<br/>Posiadam również niekomercyjne doświadczenie w technologii MERN. 
+                    <br/>Tworzenie Test Case-ów, pisanie testów automatycznych, Code Review, dokumentacja, fixowanie istniejących testów oraz 
+                    utrzymanie środowisk testowych.<br/>Posiadam również niekomercyjne doświadczenie w technologii MERN i .NET Core 6+ w docker-yzowanej usłudze. 
                 </p>
                 <p className='akapit tracking-in-expand-fwd-bottom'>
                     W ramach projektu inżynierskiego uczestniczyłem w przygotowaniu stacji pomiarowej IoT z brokerem wiadomości MQTT, 
@@ -28,9 +28,20 @@ const Glowna = () =>{
                 </p>
                 <p className='akapit tracking-in-expand-fwd-bottom'>
                     Aktualnie poza pracą biorę udział w projekcie Radon prowadzonym pod czujnym okiem Pana Profesora Cezarego Orłowskiego we współpracy z WSB oraz IBM. 
-                    Pomagam w procesie wytwarzania rozwiązania IoT do pobierania pomiarów pierwiastka Radon z powietrza. Rozwiązanie ma działać na zasadzie plug and play.
-                    Dotychczas przygotowałem klienta Node.js odbierającego dane zebrane uprzednio w brokerze wiadomości kafka i 
-                    zapisującego te dane do - również przeze mnie przygotowanej - bazy MySql. Całość działa w docker-compose.
+                    Pomagam w procesie wytwarzania rozwiązania IoT do pobierania pomiarów pierwiastka Radon z powietrza. 
+                    Rozwiązanie ma działać na zasadzie plug and play ze scentralizowanym serverem bazodanowym, oraz możliwością lokalnej edycji ustawień czujników. 
+                    Dotychczas przygotowałem obrazy dockerowe: 
+                    <ul>
+                        <li>
+                            Klienta Kafki w Node.js, pobierającego dane z brokera Kafki i przekazującego je do API poprzez protokół HTTP. 
+                        </li>
+                        <li>
+                            API w .NET 7 MVC - szczegóły w zakładce Projekty.
+                        </li>
+                        <li>
+                            Bazy danych MySql.
+                        </li>
+                    </ul>
                 </p>
                 <h2 className='text-focus-in'>
                     W jakich technologiach dobrze się czuję?
@@ -38,7 +49,7 @@ const Glowna = () =>{
                     <div className="LISTAADIV tracking-in-expand-fwd-bottom">
                         <ul className="LISTAA">
                             <li>
-                                C#
+                                C# - .Net Framework, .Net Core 6+ - MVC, minimal API
                             </li>
                             <li>
                                 MERN stack
@@ -60,25 +71,25 @@ const Glowna = () =>{
                     <div className="LISTAADIV tracking-in-expand-fwd-bottom">
                         <ul className="LISTAA">
                             <li>
-                                C# - Visual Studio, OOP, WPF, WindowsForms App, Console App, linq, delegatory, fabryki obiektów, NUnit - testy jednostkowe, Selenium.
+                                C# - Visual Studio, MVC/minimal API, Selenium, NUnit, Console App, Linq, OOP.
                             </li>
                             <li>
-                                Strony Internetowe - HTML, CSS (SCSS) , JavaScript, ES6, RWD, React.js, Node.js.
+                                Strony Internetowe - HTML, CSS (SCSS) , JavaScript, ES6, RWD, React.js, .NET Core, Node.js.
                             </li>
                             <li>
-                                IoT - Raspberry Pi + protokół MQTT.
+                                Git, GitLab, GitHub.
+                            </li>
+                            <li>
+                                Docker, docker compose
                             </li>
                             <li>
                                 Środowisko Linux - Bash, Shell, Cron, Nginx, Apache, FTP, SSH, fail2ban, [...]
                             </li>
                             <li>
-                                Java - Android Studio (aplikacje na Androida z wykorzystaniem API), IntelliJ, OOP.
-                            </li>
-                            <li>
                                 Maszyny Wirtualne / Chmura - w tym: VirtualBox, AzureVM, Google Compute Engine, AWS.
                             </li>
                             <li>
-                                Git, GitLab, GitHub.
+                                IoT - Raspberry Pi + protokół MQTT.
                             </li>
                             <li>
                                 AD - Windows server 2012r2, Linux CentOS.
@@ -94,12 +105,6 @@ const Glowna = () =>{
                             </li>
                             <li>
                                 Unity Game Engine - podstawy.
-                            </li>
-                            <li>
-                                Docker, docker compose
-                            </li>
-                            <li>
-                                Inżynieria Oprogramowania - modele oraz metodyki w konkretnych przypadkach.
                             </li>
                             <li>
                                 R - Sztuczna Inteligencja - algorytmy genetyczne oraz rekurencyjne.
