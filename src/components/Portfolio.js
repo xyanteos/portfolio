@@ -87,6 +87,9 @@ class Portfolio extends React.Component {
                                         Edytowanie nazwy pokoju,
                                     </li>
                                     <li>
+                                        Usunięcie pokoju,
+                                    </li>
+                                    <li>
                                         Ustawienie prywatności pokoju (odbiera możliwość odnalezienia go po nazwie),
                                     </li>
                                     <li>
