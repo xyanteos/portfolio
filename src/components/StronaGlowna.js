@@ -49,19 +49,13 @@ const Glowna = () =>{
                     <div className="LISTAADIV tracking-in-expand-fwd-bottom">
                         <ul className="LISTAA">
                             <li>
-                                C# - .Net Framework, .Net Core 6+ - MVC, minimal API
+                                C# - .Net Framework, .Net Core 6+ - MVC / minimal API, Selenium
                             </li>
                             <li>
                                 MERN stack
                             </li>
                             <li>
                                 Windows/Linux
-                            </li>
-                            <li>
-                                Unity
-                            </li>
-                            <li>
-                                Android Studio
                             </li>
                         </ul>
                     </div>
