@@ -1,6 +1,7 @@
 import { useState, UIEvent, useEffect } from 'react'
 import './App.css'
-import './assets/vite.svg'
+// import './assets/vite.svg'
+// import './assets/burger.svg'
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,22 +25,38 @@ function App() {
   return (
     <div className={`Body`}>
       <header className={`HeaderContainer${scrolled ? ' sticky' : ''}`} >
-        <div className='Logo'>
-          <a href='/'>
-          <span>
-            Maciej
-          </span>
-          <img src='./vite.svg'/>
-          <span>
-            Nowacki
-          </span>
-          </a>
-        </div>
         <nav className='NavBarMenu menu'>
+          <a className='Logo' href='/'>
+            <span>
+              Maciej
+            </span>
+            <img src='./vite.svg'/>
+            <span>
+              Nowacki
+            </span>
+          </a>
+          <a className='AboutMe mobileHidden' href='/about'>O mnie</a>
+          <a className='Projekty mobileHidden' href='/projects'>Projekty</a>
+          <a className='Contact mobileHidden' href='/contact'>Kontakt</a>
+          <a className='burger'>
+            <img src='./burger.svg'/>
+          </a>
+        </nav>
+        <nav className='NavBarMenu menu sidebar' style={{display: 'none'}}>
+          <a className='Logo' href='/'>
+            <span>
+              Maciej
+            </span>
+            <img src='./vite.svg'/>
+            <span>
+              Nowacki
+            </span>
+          </a>
           <a className='AboutMe' href='/about'>O mnie</a>
           <a className='Projekty' href='/projects'>Projekty</a>
           <a className='Contact' href='/contact'>Kontakt</a>
         </nav>
+
       </header>
       <div className='Content'>
         Hey

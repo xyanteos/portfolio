@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
@@ -18,17 +23,6 @@ a {
   color: #ffdb64;
   text-decoration: inherit;
 }
-a:hover {
-  color: #535bf2;
-}
-
-/* body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-} */
 
 h1 {
   font-size: 3.2em;
@@ -46,9 +40,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -57,52 +53,94 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #a7a7a7;
+    background-color: #d8d8d8;
   }
+
   .menu a:hover {
     color: #000cf8;
   }
+
   .menu a{
     color: #3c3c43;
   }
+
   button {
     background-color: #f9f9f9;
   }
+
   p{
     color : #3b3b3b;
   }
+
   .HeaderContainer.sticky{
     position: sticky;
     top: 0;
-    border-bottom: 0.5px solid #e2e2e3;
-    background-color: var(--vp-c-gutter);
+    background-color: #d8d8d8dc;
     z-index: 100;
+    border-bottom: 0.5px solid #afafaf;
+    box-shadow: 0 3px 0px rgb(194, 194, 194);
+  }
+}
+@media only screen and (max-width: 1380px){
+  .NavBarMenu{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .NavBarMenu{
+    font-size: 80%;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 840px){
+  .mobileHidden{
+      display: none !important;
+  }
+  .NavBarMenu{
+    width: 100%;
+    font-size: 100%;
+  }
+  .NavBarMenu .burger{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .burger :hover{
+    cursor: pointer;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    color: #ffffff;
     background-color: #1b1b1f;
+    color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #213547;
   }
+
   .menu a{
     color: #deded6;
   }
+
   .menu a:hover {
-    color: #000cf8;
+    color: #1621f8;
   }
+
   .HeaderContainer.sticky{
     position: sticky;
     top: 0;
-    border-bottom: 1px solid black;
-    background-color: var(--vp-c-gutter);
-    z-index: 100;
+    border-bottom: 1px solid rgb(20, 20, 20);
+    background-color: #1b1b1fef;
+    box-shadow: 0 3px 0px rgba(0, 0, 0, 0.1);
+    z-index: 999;
   }
 }
 
