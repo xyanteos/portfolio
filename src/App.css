@@ -46,6 +46,19 @@ a:hover {
 .burger{
   display: none;
 }
+.exitButtonContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar .exit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
 
 .sidebar{
   position: fixed;

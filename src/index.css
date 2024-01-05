@@ -8,7 +8,7 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   background-color: #242424;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -50,6 +50,22 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.burger :hover{
+  cursor: pointer;
+}
+
+.exit :hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.sidebar{
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -75,12 +91,13 @@ button:focus-visible {
   .HeaderContainer.sticky{
     position: sticky;
     top: 0;
-    background-color: #d8d8d8dc;
+    background-color: #d8d8d8;
     z-index: 100;
     border-bottom: 0.5px solid #afafaf;
     box-shadow: 0 3px 0px rgb(194, 194, 194);
   }
 }
+
 @media only screen and (max-width: 1380px){
   .NavBarMenu{
     width: 100%;
@@ -94,10 +111,15 @@ button:focus-visible {
   }
 }
 
-@media only screen and (max-width: 840px){
+@media only screen and (max-width: 880px){
   .mobileHidden{
       display: none !important;
   }
+
+  .sidebar{
+    display: flex;
+  }
+
   .NavBarMenu{
     width: 100%;
     font-size: 100%;
@@ -138,7 +160,7 @@ button:focus-visible {
     position: sticky;
     top: 0;
     border-bottom: 1px solid rgb(20, 20, 20);
-    background-color: #1b1b1fef;
+    background-color: #1b1b1f;
     box-shadow: 0 3px 0px rgba(0, 0, 0, 0.1);
     z-index: 999;
   }
