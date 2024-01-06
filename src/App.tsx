@@ -69,8 +69,10 @@ function App() {
         </nav>
 
       </header>
-      <div className='Content'>
-        Hey
+      <div className='contentContainer'>
+        <div className='Content'>
+          Hey
+        </div>
       </div>
     </div>
   )
