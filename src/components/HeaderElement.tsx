@@ -5,6 +5,8 @@ type HeaderProps = {
     burgerActive : boolean,
     scrolled: boolean,
     HabndleBurgerButtonClick : () => void
+    english : boolean
+    setEnglish : React.Dispatch<React.SetStateAction<boolean>> | null
     // english : boolean
     HandleEnglishFieldChange : () => void
 }
@@ -14,60 +16,159 @@ type expectedContext = {
 }
 
 
-const HeaderElement = ({ burgerActive, scrolled, HabndleBurgerButtonClick, HandleEnglishFieldChange } : HeaderProps) =>{
+const HeaderElement = ({ burgerActive, scrolled, HabndleBurgerButtonClick, english, setEnglish,  HandleEnglishFieldChange } : HeaderProps) =>{
 
-    const context : expectedContext = useOutletContext();
+    // const context : expectedContext = useOutletContext();
 
-    return(
-    <header className={`HeaderContainer${scrolled ? ' sticky' : ''}`} >
-        <nav className='NavBarMenu menu'>
-            <Link className='Logo' to='/'>
-                <span>
-                Maciej
-                </span>
-                <img src='./vite.svg'/>
-                <span>
-                Nowacki
-                </span>
-            </Link>
-            <label className="switch">
-                <span className="polishCheckerText">
-                    PL
-                </span>
-                <input type="checkbox" defaultChecked={context?.english} onChange={HandleEnglishFieldChange} />
-                <span className="slider round"></span>
-                <span className="englishCheckerText">
-                    EN
-                </span>
-            </label>
-            {/* <a className='AboutMe mobileHidden' href='/about'>O mnie</a> */}
-            <Link className="mobileHidden" to='/about' >O mnie</Link>
-            <Link className="mobileHidden" to='/projects' >Projekty</Link>
-            <Link className="mobileHidden" to='/contact' >Kontakt</Link>
-            {/* <a className='Projekty mobileHidden' href='/projects'>Projekty</a> */}
-            {/* <a className='Contact mobileHidden' href='/contact'>Kontakt</a> */}
-            <Link className="mobileHidden" to="/options">Opcje</Link>
-            <a className={`burger${burgerActive ? ' active' : ''}`} onClick={HabndleBurgerButtonClick}>
-                <img src='./burger.svg'/>
-            </a>
-        </nav>
-        <nav className={`NavBarMenu menu sidebar${burgerActive ? '' : ' hidden'}`}>
-            <div className='exitButtonContainer'>
-                <a className={`exit${!burgerActive ? ' hidden' : ''}`} onClick={HabndleBurgerButtonClick}>
-                <img src='./close.svg'/>
+    // useEffect(()=>{
+    //     console.log(context);
+    // },[])
+
+    const englishNavBar = () : JSX.Element => {
+        return(
+            <header className={`HeaderContainer${scrolled ? ' sticky' : ''}`} >
+            <nav className='NavBarMenu menu'>
+                <Link className='Logo' to='/'>
+                    <span>
+                    Maciej
+                    </span>
+                    <img src='./vite.svg'/>
+                    <span>
+                    Nowacki
+                    </span>
+                </Link>
+                <label className="switch">
+                    <span className="polishCheckerText">
+                        PL
+                    </span>
+                    <input type="checkbox" defaultChecked={english} onChange={HandleEnglishFieldChange} />
+                    <span className="slider round"></span>
+                    <span className="englishCheckerText">
+                        EN
+                    </span>
+                </label>
+                <Link className="mobileHidden" to='/about' >About me</Link>
+                <Link className="mobileHidden" to='/projects' >Projects</Link>
+                <Link className="mobileHidden" to='/contact' >Contact</Link>
+                <Link className="mobileHidden" to="/options">Options</Link>
+                <a className={`burger${burgerActive ? ' active' : ''}`} onClick={HabndleBurgerButtonClick}>
+                    <img src='./burger.svg'/>
                 </a>
-            </div>
-            {/* <a className='AboutMe' href='/about'>O mnie</a> */}
-            <Link className="AboutMe" to='/about' onClick={HabndleBurgerButtonClick}>O mnie</Link>
-            <Link className="Projects" to='/projects' onClick={HabndleBurgerButtonClick}>Projekty</Link>
-            <Link className="Contact" to='/contact' onClick={HabndleBurgerButtonClick}>Kontakt</Link>
-            <Link className="Options" to='/options' onClick={HabndleBurgerButtonClick}>Opcje</Link>
+            </nav>
+            <nav className={`NavBarMenu menu sidebar${burgerActive ? '' : ' hidden'}`}>
+                <div className='exitButtonContainer'>
+                    <a className={`exit${!burgerActive ? ' hidden' : ''}`} onClick={HabndleBurgerButtonClick}>
+                    <img src='./close.svg'/>
+                    </a>
+                </div>
+                <Link className="AboutMe" to='/about' onClick={HabndleBurgerButtonClick}>About me</Link>
+                <Link className="Projects" to='/projects' onClick={HabndleBurgerButtonClick}>Projects</Link>
+                <Link className="Contact" to='/contact' onClick={HabndleBurgerButtonClick}>Contact</Link>
+                <Link className="Options" to='/options' onClick={HabndleBurgerButtonClick}>Options</Link>
+            </nav>
+        </header>
+        )
+    }
 
-            {/* <a className='Projects' href='/projects'>Projekty</a>
-            <a className='Contact' href='/contact'>Kontakt</a> */}
-        </nav>
-    </header>
-    )       
+    const polishNavBar = () : JSX.Element =>{
+        return(
+            <header className={`HeaderContainer${scrolled ? ' sticky' : ''}`} >
+            <nav className='NavBarMenu menu'>
+                <Link className='Logo' to='/'>
+                    <span>
+                    Maciej
+                    </span>
+                    <img src='./vite.svg'/>
+                    <span>
+                    Nowacki
+                    </span>
+                </Link>
+                <label className="switch">
+                    <span className="polishCheckerText">
+                        PL
+                    </span>
+                    <input type="checkbox" defaultChecked={english} onChange={HandleEnglishFieldChange} />
+                    <span className="slider round"></span>
+                    <span className="englishCheckerText">
+                        EN
+                    </span>
+                </label>
+                <Link className="mobileHidden" to='/about' >O mnie</Link>
+                <Link className="mobileHidden" to='/projects' >Projekty</Link>
+                <Link className="mobileHidden" to='/contact' >Kontakt</Link>
+                <Link className="mobileHidden" to="/options">Opcje</Link>
+                <a className={`burger${burgerActive ? ' active' : ''}`} onClick={HabndleBurgerButtonClick}>
+                    <img src='./burger.svg'/>
+                </a>
+            </nav>
+            <nav className={`NavBarMenu menu sidebar${burgerActive ? '' : ' hidden'}`}>
+                <div className='exitButtonContainer'>
+                    <a className={`exit${!burgerActive ? ' hidden' : ''}`} onClick={HabndleBurgerButtonClick}>
+                    <img src='./close.svg'/>
+                    </a>
+                </div>
+                <Link className="AboutMe" to='/about' onClick={HabndleBurgerButtonClick}>O mnie</Link>
+                <Link className="Projects" to='/projects' onClick={HabndleBurgerButtonClick}>Projekty</Link>
+                <Link className="Contact" to='/contact' onClick={HabndleBurgerButtonClick}>Kontakt</Link>
+                <Link className="Options" to='/options' onClick={HabndleBurgerButtonClick}>Opcje</Link>
+            </nav>
+        </header>
+        )
+    }
+
+    if(english) return englishNavBar()
+    else return polishNavBar()
+
+    // return(
+    // <header className={`HeaderContainer${scrolled ? ' sticky' : ''}`} >
+    //     <nav className='NavBarMenu menu'>
+    //         <Link className='Logo' to='/'>
+    //             <span>
+    //             Maciej
+    //             </span>
+    //             <img src='./vite.svg'/>
+    //             <span>
+    //             Nowacki
+    //             </span>
+    //         </Link>
+    //         <label className="switch">
+    //             <span className="polishCheckerText">
+    //                 PL
+    //             </span>
+    //             <input type="checkbox" defaultChecked={english} onChange={HandleEnglishFieldChange} />
+    //             <span className="slider round"></span>
+    //             <span className="englishCheckerText">
+    //                 EN
+    //             </span>
+    //         </label>
+    //         {/* <a className='AboutMe mobileHidden' href='/about'>O mnie</a> */}
+    //         <Link className="mobileHidden" to='/about' >O mnie</Link>
+    //         <Link className="mobileHidden" to='/projects' >Projekty</Link>
+    //         <Link className="mobileHidden" to='/contact' >Kontakt</Link>
+    //         {/* <a className='Projekty mobileHidden' href='/projects'>Projekty</a> */}
+    //         {/* <a className='Contact mobileHidden' href='/contact'>Kontakt</a> */}
+    //         <Link className="mobileHidden" to="/options">Opcje</Link>
+    //         <a className={`burger${burgerActive ? ' active' : ''}`} onClick={HabndleBurgerButtonClick}>
+    //             <img src='./burger.svg'/>
+    //         </a>
+    //     </nav>
+    //     <nav className={`NavBarMenu menu sidebar${burgerActive ? '' : ' hidden'}`}>
+    //         <div className='exitButtonContainer'>
+    //             <a className={`exit${!burgerActive ? ' hidden' : ''}`} onClick={HabndleBurgerButtonClick}>
+    //             <img src='./close.svg'/>
+    //             </a>
+    //         </div>
+    //         {/* <a className='AboutMe' href='/about'>O mnie</a> */}
+    //         <Link className="AboutMe" to='/about' onClick={HabndleBurgerButtonClick}>O mnie</Link>
+    //         <Link className="Projects" to='/projects' onClick={HabndleBurgerButtonClick}>Projekty</Link>
+    //         <Link className="Contact" to='/contact' onClick={HabndleBurgerButtonClick}>Kontakt</Link>
+    //         <Link className="Options" to='/options' onClick={HabndleBurgerButtonClick}>Opcje</Link>
+
+    //         {/* <a className='Projects' href='/projects'>Projekty</a>
+    //         <a className='Contact' href='/contact'>Kontakt</a> */}
+    //     </nav>
+    // </header>
+    // )       
 }
 
 export default HeaderElement

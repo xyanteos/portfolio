@@ -18,8 +18,8 @@ const OptionsPage = () => {
     },[])
 
     const renderPlOrEn = () : JSX.Element =>{
-        if(context.english) return polishOptions()
-        else return englishOptions()
+        if(context.english) return englishOptions()
+        else return polishOptions()
     }
 
     const polishOptions = () : JSX.Element => {

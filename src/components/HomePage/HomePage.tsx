@@ -12,7 +12,7 @@ const HomePage = () => {
                 Jeśli obecnie wybrany przez Ciebie tryb wyświetlania treści w urządzeniu (jasny bądź ciemny) Ci nie odpowiada i/lub chcesz spradzić, jak strona wygląda w innym trybie, to możesz śmiało zmienić ustawienia wyświetlania w zakładce Ustawienia.
             </p>
             <p>
-                Zakładka Projekty zawiera w sobie również mniejsze, interaktywne, wersje demo napisanych dotąd przeze mnie prostych aplikacji niekomercyjnych. Myślę, że warto sprawdzić ich działanie ;)
+                Zakładka Projekty zawiera w sobie również mniejsze, interaktywne wersje demo napisanych dotąd przeze mnie prostych aplikacji niekomercyjnych. Myślę, że warto sprawdzić ich działanie ;)
             </p>
             <p>
                 Zapraszam do zapoznania się ze wsystkimi dostępnymi tutaj informacjami o mnie, a zwłaszcza z moim portfolio. Jeśli treść tej strony okaże się wystarczająco intrygująca, to zapraszam również do kontaktu poprzez podane pod odpowiednim odnośnikiem informacje.

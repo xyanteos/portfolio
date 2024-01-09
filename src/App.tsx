@@ -44,7 +44,7 @@ useEffect(()=>{
   return (
     <div className={`Body`}>
 
-      <HeaderElement burgerActive={burgerActive} scrolled={scrolled} HabndleBurgerButtonClick={HandleBurgerButtonClick} HandleEnglishFieldChange={HandleEnglishFieldChange}/>
+      <HeaderElement burgerActive={burgerActive} scrolled={scrolled} HabndleBurgerButtonClick={HandleBurgerButtonClick} english={english} setEnglish={setEnglish} HandleEnglishFieldChange={HandleEnglishFieldChange}/>
 
       <div className='contentContainer'>
         <div className='Content'>
