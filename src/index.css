@@ -19,17 +19,121 @@
 }
 
 a {
-  font-weight: 500;
-  color: #ffdb64;
   text-decoration: inherit;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/*** The Slider button start ***/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 30px;
+  margin: 2rem;
 }
 
-button {
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 10px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.polishCheckerText{
+
+    /* Fallback: Set a background color. */
+    background-color: red;
+  
+    /* Create the gradient. */
+    background-image: linear-gradient(to bottom, #ffffff, #ff0000);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+  position: relative;
+  left: -30px;
+  bottom: -5px;
+}
+
+.englishCheckerText{
+    /* Fallback: Set a background color. */
+    background-color: red;
+  
+    /* Create the gradient. */
+    background-image: linear-gradient(90deg, #ffffff, #dd2a2a, #0011ff);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+  position: relative;
+  left: 48px;
+  bottom: -5px;
+}
+/*** The Slider button end ***/
+
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -39,16 +143,16 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
+} */
 
-button:hover {
+/* button:hover {
   border-color: #646cff;
 }
 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 .burger :hover{
   cursor: pointer;
@@ -56,6 +160,10 @@ button:focus-visible {
 
 .exit :hover {
   cursor: pointer;
+}
+
+.centeredText {
+  text-align: center !important;
 }
 
 .hidden {
@@ -66,55 +174,36 @@ button:focus-visible {
   display: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #d8d8d8;
-  }
-
-  .menu a:hover {
-    color: #000cf8;
-  }
-
-  .menu a{
-    color: #3c3c43;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-
-  p{
-    color : #3b3b3b;
-  }
-
-  .HeaderContainer.sticky{
-    position: sticky;
-    top: 0;
-    background-color: #d8d8d8;
-    z-index: 100;
-    border-bottom: 0.5px solid #afafaf;
-    box-shadow: 0 3px 0px rgb(194, 194, 194);
-  }
-}
-
-@media only screen and (max-width: 1380px){
+@media only screen and (max-width: 1580px){
   .NavBarMenu{
-    width: 100%;
+    width: 100% !important;
   }
   .Content{
-    width: 100%;
+    width: 100% !important;
+    margin: 0 3rem;
   }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1300px){
   .NavBarMenu{
     font-size: 80%;
     justify-content: space-around;
   }
+  
+  p{
+    text-align: left;
+  }
 }
 
-@media only screen and (max-width: 880px){
+@media only screen and (max-width: 1200px){
+  .Content {
+    margin: 0 2rem;
+  }
+
+  link, a:hover {
+    filter: drop-shadow(0 0 10px #000000e1) !important;
+  }
+
   .mobileHidden{
       display: none !important;
   }
@@ -125,8 +214,8 @@ button:focus-visible {
   }
 
   .sidebar a{
-    margin: 0;
-    width: 100%;
+    margin: 0 !important;
+    width: 100% !important;
     height: 100%;
   }
 
@@ -139,7 +228,7 @@ button:focus-visible {
     font-size: 100%;
   }
   .NavBarMenu .burger{
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: flex-end;
   }
@@ -148,10 +237,21 @@ button:focus-visible {
   }
 }
 
+@media only screen and (max-width: 566px){
+  .switch, .slider {
+    display: none;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     background-color: #1b1b1f;
     color: #ffffff;
+  }
+
+  a:hover {
+    filter: drop-shadow(0 0 4em #0077ff);
+    /* filter: drop-shadow(0 0 30px #000000e1); */
   }
 
   a:hover {
@@ -179,6 +279,44 @@ button:focus-visible {
     z-index: 999;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #d8d8d8;
+  }
+  a:hover {
+    /* filter: drop-shadow(0 0 4em #464ff8); */
+    filter: drop-shadow(0 0 30px #000000e1);
+  }
+  
+
+  .menu a:hover {
+    color: #000cf8;
+  }
+
+  .menu a{
+    color: #3c3c43;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+
+  p{
+    color : #3b3b3b;
+  }
+
+  .HeaderContainer.sticky{
+    position: sticky;
+    top: 0;
+    background-color: #d8d8d8;
+    z-index: 100;
+    border-bottom: 0.5px solid #afafaf;
+    box-shadow: 0 3px 0px rgb(194, 194, 194);
+  }
+}
+
 
 /* @font-face {
   font-family: 'Inter';
