@@ -1,0 +1,51 @@
+.lightModeText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 9px;
+}
+
+.darkModeText {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 9px;
+}
+
+.lightBox{
+    /* box-shadow: 0 3px 0px rgb(255, 255, 255); */
+    background-color: rgb(168, 166, 249);
+    background-size: auto;
+    position: relative;
+    left: -101px;
+    bottom: 12px;
+    height: 177%;
+    width: 150%;
+    border-radius: 50%;
+}
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #eeff00;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free";
+    z-index: 2;
+}
+.darkBox{
+    background-color: rgb(47, 46, 115);
+    position: relative;
+    left: 77px;
+    bottom: 89px;
+    height: 173%;
+    width: 146%;
+    border-radius: 50%;
+}
+
+

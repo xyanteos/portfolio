@@ -1,48 +1,15 @@
 import React, { JSXElementConstructor, useEffect } from "react";
 import './OptionsPage.css'
 import { useOutletContext } from "react-router-dom";
-
-type expectedContext = {
-    english : boolean,
-    setEnglish : React.Dispatch<React.SetStateAction<boolean>> | null,
-    currentModeBlack : boolean,
-    setCurrentModeBlack : React.Dispatch<React.SetStateAction<boolean>> | null
-}
+import OptionsPageLangDependant from "./OptionsPageLangDependant";
+import {NavigationOutletType} from '../Global/Types/NavigationOutletType'
 
 const OptionsPage = () => {
 
-    const context : expectedContext = useOutletContext();
+    const context : NavigationOutletType = useOutletContext()
 
-    useEffect(()=>{
-        console.log(context.english);
-    },[])
 
-    const renderPlOrEn = () : JSX.Element =>{
-        if(context.english) return englishOptions()
-        else return polishOptions()
-    }
-
-    const polishOptions = () : JSX.Element => {
-        return (
-            <div className="optionsContainer">
-                <h1>
-                    Opcje
-                </h1>
-            </div>
-        )
-    }
-
-    const englishOptions = () : JSX.Element => {
-        return (
-            <div>
-                <h1 className="optionsContainer">
-                    Options
-                </h1>
-            </div>
-        )
-    }
-
-    return renderPlOrEn()
+    return <OptionsPageLangDependant english={context.english} setEnglish={context.setEnglish} currentModeBlack={context.currentModeBlack} setCurrentModeBlack={context.setCurrentModeBlack}/>
 }
 
 export default OptionsPage
