@@ -1,18 +1,18 @@
-div{
+div {
     width: 100%;
 }
 
 h1 {
     font-size: 3em;
     margin: 1rem;
-  }
+}
 
-p{
+p {
     width: 100%;
     text-align: left;
 }
 
-h2{
+h2 {
     font-size: 2em;
     margin: 1rem;
     padding: 2rem 0;

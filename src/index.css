@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -22,6 +22,32 @@ a {
   text-decoration: inherit;
 }
 
+.button {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button :hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
 /*** The Slider button start ***/
 
 .switch {
@@ -32,7 +58,7 @@ a {
   margin: 2rem;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -62,15 +88,15 @@ a {
   transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #2196F3;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 10px #2196F3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -85,54 +111,54 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.polishCheckerText{
+.polishCheckerText {
 
-    /* Fallback: Set a background color. */
-    background-color: red;
-  
-    /* Create the gradient. */
-    background-image: linear-gradient(to bottom, #ffffff, #ff0000);
-    
-    /* Set the background size and repeat properties. */
-    background-size: 100%;
-    /* background-repeat: no-repeat; */
-  
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+  /* Fallback: Set a background color. */
+  background-color: red;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(to bottom, #ffffff, #ff0000);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 
   position: relative;
   left: -30px;
   bottom: -5px;
 }
 
-.englishCheckerText{
-    /* Fallback: Set a background color. */
-    background-color: red;
-  
-    /* Create the gradient. */
-    background-image: linear-gradient(90deg, #ffffff, #dd2a2a, #0011ff);
-    
-    /* Set the background size and repeat properties. */
-    background-size: 100%;
-    /* background-repeat: no-repeat; */
-  
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+.englishCheckerText {
+  /* Fallback: Set a background color. */
+  background-color: red;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(90deg, #ffffff, #dd2a2a, #0011ff);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 
   position: relative;
   left: 48px;
   bottom: -5px;
 }
 
-.burger :hover{
+.burger :hover {
   cursor: pointer;
 }
 
@@ -148,86 +174,99 @@ input:checked + .slider:before {
   display: none !important;
 }
 
-.sidebar{
+.sidebar {
   display: none;
 }
 
-@media only screen and (max-width: 1580px){
-  .NavBarMenu{
+@media only screen and (max-width: 1580px) {
+  .NavBarMenu {
     width: 100% !important;
   }
-  .Content{
+
+  .Content {
     width: 100% !important;
     margin: 0 3rem;
   }
 }
 
-@media only screen and (max-width: 1300px){
-  .NavBarMenu{
+@media only screen and (max-width: 1300px) {
+  .NavBarMenu {
     font-size: 80%;
     justify-content: space-around;
   }
-  
-  p{
+
+  p {
     text-align: left;
   }
 }
 
-@media only screen and (max-width: 1200px){
-  .Content {
-    margin: 0 2rem;
+@media only screen and (max-width: 1200px) {
+  .button {
+    padding: 0 2.6rem;
   }
 
-  link, a:hover {
+  .Content {
+    margin: 0;
+    width: 100%;
+  }
+
+  link,
+  a:hover {
     filter: drop-shadow(0 0 10px #000000e1) !important;
   }
 
-  .mobileHidden{
-      display: none !important;
+  .mobileHidden {
+    display: none !important;
   }
 
-  .sidebar{
+  .sidebar {
     display: flex;
     height: 100%;
   }
 
-  .sidebar a{
+  .sidebar a {
     margin: 0 !important;
     width: 100% !important;
     height: 100%;
   }
 
-  .exit img{
+  .exit img {
     margin: 2rem 5rem;
   }
 
-  .NavBarMenu{
+  .NavBarMenu {
     width: 100%;
     font-size: 100%;
   }
-  .NavBarMenu .burger{
+
+  .NavBarMenu .burger {
     display: flex !important;
     align-items: center;
     justify-content: flex-end;
   }
-  .burger :hover{
+
+  .burger :hover {
     cursor: pointer;
   }
 }
 
-@media only screen and (max-width: 566px){
+@media only screen and (max-width: 566px) {
   .header {
     display: none !important;
   }
+
+  .button {
+    padding: 0 1.5rem;
+  }
 }
 
-@media only screen and (min-width: 2280px){
-  .Content{
+@media only screen and (min-width: 2280px) {
+  .Content {
     width: 60% !important;
   }
 }
 
-.enforceDark{
+.enforceDark {
   #root {
     background-color: #1b1b1f !important;
     color: #ffffff !important;
@@ -246,7 +285,7 @@ input:checked + .slider:before {
     background-color: #213547 !important;
   }
 
-  .menu a{
+  .menu a {
     color: #deded6 !important;
   }
 
@@ -254,7 +293,7 @@ input:checked + .slider:before {
     color: #1621f8 !important;
   }
 
-  .HeaderContainer.sticky{
+  .HeaderContainer.sticky {
     position: sticky !important;
     top: 0;
     border-bottom: 1px solid rgb(20, 20, 20) !important;
@@ -264,20 +303,21 @@ input:checked + .slider:before {
   }
 }
 
-.enforceLight{
+.enforceLight {
   #root {
     color: #213547 !important;
     background-color: #d8d8d8 !important;
   }
+
   a:hover {
     filter: drop-shadow(0 0 30px #000000e1) !important;
   }
-  
+
   .menu a:hover {
     color: #000cf8 !important;
   }
 
-  .menu a{
+  .menu a {
     color: #3c3c43 !important;
   }
 
@@ -285,11 +325,11 @@ input:checked + .slider:before {
     background-color: #f9f9f9 !important;
   }
 
-  p{
-    color : #3b3b3b !important;
+  p {
+    color: #3b3b3b !important;
   }
 
-  .HeaderContainer.sticky{
+  .HeaderContainer.sticky {
     position: sticky !important;
     top: 0;
     background-color: #d8d8d8 !important;
@@ -318,7 +358,7 @@ input:checked + .slider:before {
     background-color: #213547;
   }
 
-  .menu a{
+  .menu a {
     color: #deded6;
   }
 
@@ -326,7 +366,7 @@ input:checked + .slider:before {
     color: #1621f8;
   }
 
-  .HeaderContainer.sticky{
+  .HeaderContainer.sticky {
     position: sticky;
     top: 0;
     border-bottom: 1px solid rgb(20, 20, 20);
@@ -341,17 +381,18 @@ input:checked + .slider:before {
     color: #213547;
     background-color: #d8d8d8;
   }
+
   a:hover {
     /* filter: drop-shadow(0 0 4em #464ff8); */
     filter: drop-shadow(0 0 30px #000000e1);
   }
-  
+
 
   .menu a:hover {
     color: #000cf8;
   }
 
-  .menu a{
+  .menu a {
     color: #3c3c43;
   }
 
@@ -359,11 +400,11 @@ input:checked + .slider:before {
     background-color: #f9f9f9;
   }
 
-  p{
-    color : #3b3b3b;
+  p {
+    color: #3b3b3b;
   }
 
-  .HeaderContainer.sticky{
+  .HeaderContainer.sticky {
     position: sticky;
     top: 0;
     background-color: #d8d8d8;

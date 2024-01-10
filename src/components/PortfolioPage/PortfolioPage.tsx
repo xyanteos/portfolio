@@ -1,14 +1,14 @@
-import React from "react";
+import { useOutletContext } from 'react-router-dom';
+import { NavigationOutletType } from '../Global/Types/NavigationOutletType';
+import './PortfolioPage.css'
+import PortfolioPagePl from "./PortfolioPage_PL";
+import PortfolioPageEn from './PortfolioPage_EN';
 
-type portfolioPageType = {
-
-}
-
-const PortfolioPage = ({} : portfolioPageType) =>{
- return <>
-
-    
- </>
+const PortfolioPage = () => {
+    const context: NavigationOutletType = useOutletContext()
+    return <>
+        {context.english ? <PortfolioPageEn /> : <PortfolioPagePl />}
+    </>
 }
 
 export default PortfolioPage

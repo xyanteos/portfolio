@@ -9,11 +9,11 @@ type expectedContext = {
 }
 
 const DeviceModeSlider = ({ currentModeBlack, setCurrentModeBlack }: expectedContext) => {
-    
-    const HandleDeviceModeFieldChange = () =>{
+
+    const HandleDeviceModeFieldChange = () => {
         setCurrentModeBlack(prev => !prev);
     }
-    
+
     return (
         <label className="switch">
             <div className="lightBox">
@@ -28,7 +28,7 @@ const DeviceModeSlider = ({ currentModeBlack, setCurrentModeBlack }: expectedCon
                 <span className='darkModeText'>
                     {/* Dark Mode */}
                     {/* <i className="fas fa-moon"></i> */}
-                    <FontAwesomeIcon icon={faMoon} size="2x" className="fa-moon"/>
+                    <FontAwesomeIcon icon={faMoon} size="2x" className="fa-moon" />
                 </span>
             </div>
         </label>

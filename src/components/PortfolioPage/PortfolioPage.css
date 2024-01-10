@@ -1,0 +1,63 @@
+.spacious {
+    margin-top: 2rem;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.centered img {
+    max-width: 45px;
+}
+
+.centered a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.project h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.project img {
+    max-height: 385px;
+    max-width: 80%;
+}
+
+.project .imagesContainer {
+    max-width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* overflow-x: scroll; */
+}
+
+.project ul {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    align-self: center;
+    width: 92%;
+}
+
+.project li {
+    width: 100%;
+    text-align: left;
+}

@@ -24,7 +24,7 @@ function App() {
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('change', ()=>handleDarkModeChange);
+      window.removeEventListener('change', () => handleDarkModeChange);
     }
   })
 

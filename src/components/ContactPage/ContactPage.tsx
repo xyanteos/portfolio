@@ -2,18 +2,19 @@ import React from "react";
 // import phoneIcon from '../Pictures/pngguru.com.png'
 import './ContactPage.css'
 import { useOutletContext } from "react-router-dom";
-import Phone from '../../../public/Phone.png'
+// import Phone from '../../../public/Phone.png'
+import Phone from '/Pictures/Phone.png?url'
 
 type expectedContext = {
-    english : boolean,
-    setEnglish : React.Dispatch<React.SetStateAction<boolean>>,
-    currentModeBlack : boolean,
-    setCurrentModeBlack : React.Dispatch<React.SetStateAction<boolean>>
+    english: boolean,
+    setEnglish: React.Dispatch<React.SetStateAction<boolean>>,
+    currentModeBlack: boolean,
+    setCurrentModeBlack: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const ContactPage = () => {
-    
-    const context : expectedContext = useOutletContext()
+
+    const context: expectedContext = useOutletContext()
 
     const linked = 'https://www.linkedin.com/in/maciej-nowacki-12b4581b3/'
     return <>

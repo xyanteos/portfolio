@@ -1,4 +1,4 @@
-.homeBody{
+.homeBody {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -7,11 +7,11 @@
     justify-content: flex-start;
 }
 
-.Content{
+.Content {
     justify-content: flex-start;
 }
 
-.homeBody p{
+.homeBody p {
     width: 100%;
     text-align: left;
 }
