@@ -1,4 +1,3 @@
-import React, { JSXElementConstructor, useEffect } from "react";
 import './OptionsPage.css'
 import { useOutletContext } from "react-router-dom";
 import OptionsPageLangDependant from "./OptionsPageLangDependant";

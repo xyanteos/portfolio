@@ -1,4 +1,3 @@
-import React from "react";
 import './AboutMePage.css'
 import { NavigationOutletType } from "../Global/Types/NavigationOutletType";
 import { useOutletContext } from "react-router-dom";

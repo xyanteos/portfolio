@@ -65,7 +65,7 @@ function App() {
   return (
     <div className={`Body`}>
 
-      <HeaderElement burgerActive={burgerActive} scrolled={scrolled} HabndleBurgerButtonClick={HandleBurgerButtonClick} english={english} setEnglish={setEnglish} currentModeBlack={currentModeBlack} setCurrentModeBlack={setCurrentModeBlack} />
+      <HeaderElement burgerActive={burgerActive} scrolled={scrolled} HabndleBurgerButtonClick={HandleBurgerButtonClick} english={english} setEnglish={setEnglish} />
 
       <div className='contentContainer'>
         <div className='Content'>

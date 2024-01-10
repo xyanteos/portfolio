@@ -1,15 +1,15 @@
-import { Link, useOutletContext } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LanguageOptionsSlider from "./OptionsPage/LanguageOptionsSlider";
-import {NavigationOutletType} from "./Global/Types/NavigationOutletType";
+import {NavigationLanguageOnlyType} from "./Global/Types/NavigationOutletType";
 
-type expectedContext = NavigationOutletType & {
+type expectedContext = NavigationLanguageOnlyType & {
     burgerActive : boolean,
     scrolled: boolean,
     HabndleBurgerButtonClick : () => void
 }
 
 
-const HeaderElement = ({ burgerActive, scrolled, HabndleBurgerButtonClick, english, setEnglish,  currentModeBlack, setCurrentModeBlack } : expectedContext) =>{
+const HeaderElement = ({ burgerActive, scrolled, HabndleBurgerButtonClick, english, setEnglish } : expectedContext) =>{
 
     // TODO: Simplify this element by using the english and setEnglish props
 

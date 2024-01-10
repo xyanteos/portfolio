@@ -1,4 +1,3 @@
-import React from "react";
 import LanguageOptionsSlider from "./LanguageOptionsSlider";
 import DeviceModeSlider from "./DeviceModeSlider";
 import type {NavigationOutletType as expectedContext} from '../Global/Types/NavigationOutletType'

@@ -6,4 +6,9 @@ export type NavigationOutletType = {
     setCurrentModeBlack : React.Dispatch<React.SetStateAction<boolean>>
 }
 
+export type NavigationLanguageOnlyType = {
+    english : boolean,
+    setEnglish : React.Dispatch<React.SetStateAction<boolean>>
+}
+
 // export default NavigationOutletType
