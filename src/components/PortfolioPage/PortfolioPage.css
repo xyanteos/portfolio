@@ -48,6 +48,14 @@
     /* overflow-x: scroll; */
 }
 
+.centerContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .project ul {
     display: flex;
     flex-direction: column;

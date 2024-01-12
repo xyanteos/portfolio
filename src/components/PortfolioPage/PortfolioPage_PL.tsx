@@ -8,6 +8,13 @@ import youtube1 from '/Pictures/YT_API_ss.png?url'
 import youtube2 from '/Pictures/YT_API_ss2.png?url'
 import nasa1 from '/Pictures/NASA_API_ss.png?url'
 import nasa2 from '/Pictures/NASA_API_ss2.png?url'
+import MauiHome from '/Pictures/MauiHome.png?url'
+import MauiRoom from '/Pictures/MauiRoom.png?url'
+import MauiRoomOptions from '/Pictures/MauiRoomOptions.png?url'
+import ShoppingListRoomController from '/Pictures/ShoppingListRoomController.png?url'
+import ShoppingListDockerized from '/Pictures/ShoppingListDockerized.png?url'
+import HomePage from '/Pictures/HomePage.png?url'
+import AboutMePage from '/Pictures/AboutMePage.png?url'
 import { useState } from 'react'
 
 const PortfolioPagePl = (): JSX.Element => {
@@ -17,13 +24,160 @@ const PortfolioPagePl = (): JSX.Element => {
     return (
         <>
             <h1 className="centered">Przykładowe projekty</h1>
+
             <div className='project'>
+                <h2 className="centered">
+                    Lista zakupów
+                </h2>
+                <p>
+                    Projekt stworzony z prywatnej potrzeby posiadania aplikacji do tworzenia listy zakupów live. Z funkcjonalności w nim zawartych korzystamy z narzeczoną na porządku dziennym.<br />
+                    Wszystkie zmiany dokonane w pokojach są od razu widoczne u innych użytkowników aplikacji, w związku z czym mogę aktualizować listę zakupów, gdy drugi użytkownik jest już w sklepie,
+                    a lista rzeczy do kupienia zamiast się zmniejszać będzie coraz dłuższa ;).
+                </p>
+                <p>
+                    Aplikacja umożliwia:
+                </p>
+                <ul>
+                    <li>
+                        Stworzenie nowego pokoju, jego edycję i usunięcie
+                    </li>
+                    <li>
+                        Wyszukanie pokoju po nazwie,
+                    </li>
+                    <li>
+                        Ustawienie prywatności pokoju (odbiera możliwość odnalezienia go po nazwie),
+                    </li>
+                    <li>
+                        Wejście do pokoju po podanym linku (React Router),
+                    </li>
+                    <li>
+                        Dodanie, edycję i usunięcie przedmiotu z listy zakupów oraz koszyka,
+                    </li>
+                    <li>
+                        Przerzucenie produktu do i z koszyka celem śledzenia progressu zakupów (Live za pomocą Web Socketów - w planach poprawa eventów),
+                    </li>
+                    <li>
+                        Usunięcie wszystkich przedmiotów z koszyka (nie z listy),
+                    </li>
+                    <li>
+                        W planach - zabezpieczenie pokoju hasłem, wyszukiwanie wszystkich pokojów publicznych, poprawa działania WS (danych i ustawień Keep Alive).
+                    </li>
+                    <li>
+                        Pomysł na rozwój - dopasowywanie nazw przedmiotów z listy do bazy proponowanych produktów, scraping cen produktów z różnych sieci sklepowych i wycena listy zakupów dla każdego z nich.
+                    </li>
+                </ul>
+                <h3 className='centered spacious'>
+                    Wersja Front-endowa REACT
+                </h3>
+                <div className="imagesContainer spacious">
+                    <img src={buyItHome} alt="LetsBuyIt_HomePage" />
+                    <img src={buyItRoom} alt="LetsBuyIt_RoomView" />
+                </div>
+                <div className="centered spacious">
+                    <button className='button' onClick={() => window.open("https://xyanteos.github.io/shopping-list/")}>
+                        Sprawdź na stronie!
+                    </button>
+                </div>
+                <p>
+                    Frontend został stworzony za pomocą: React.js, functional components, JS ES6, Router. Powstał głównie po to, aby nie trzeba było posiadać mobilnej aplikacji celem korzystania z udostępnionej funkcjonalności.
+                    Oprawa wizualna (CSS) bazuje głównie na Semantic UI. Strona posiada pełną funkcjonalność udostępnioną przez obecny stan aplikacji. Zapraszam do zapoznania się z nią i przetestowania.
+                    Wszystkie informacje udostępnione przez użytkowników na stronie traktowane są jako dane publiczne, dlatego proszę nie wrzucać informacji nieprzeznaczonych dla publicznych oczu.
+                    Kto wie, może zaczniesz z niej korzystać na codzień?
+                </p>
+                <h3 className='centered spacious'>
+                    Wersja wieloplatformowa .Net MAUI
+                </h3>
+                <p>
+                    Aplikacja wieloplatformowa (na zdjęciach używana na Androidzie) napisana w .NET MAUI.
+                    Szybsza forma korzystania z backendu listy zakupów i wygodniejsza od przeglądarki przy częstym korzystaniu z listy zakupów.
+                    Komunikuje się dokładnie z tym samym API, korzysta z tego samego połącznia SignalR celem pobierania na żywo zmian wewnątrz danego pokoju.
+                </p>
+                <div className='imagesContainer spacious'>
+                    <img src={MauiHome} alt="ShoppingListMauiPic" />
+                    <img src={MauiRoom} alt="ShoppingListMauiPic2" />
+                    <img src={MauiRoomOptions} alt="ShoppingListMauiPic3" />
+                </div>
+                <p>
+                    Aplikacja z racji nie bycia przeglądarką bazuje na wyszukiwaniu pokojów poprzez ich nazwę. <br />
+                    Poza typowym dla tej aplikacji zachowaniem i spodziewaną funkcjonalnością aplikacja ta będzie finalnie posiadała:
+                </p>
+                <ul>
+                    <li>
+                        Wyszukanie pokoju po linku,
+                    </li>
+                    <li>
+                        Autozapis ostatniej odwiedzonej ścieżki (ostatniego pokoju) i automatycznie rozpoczynała nową sesję w miejscu zakończenia poprzedniej,
+                    </li>
+                    <li>
+                        Możliwość stworzenia pokoju lokalnego offline (korzystając z Dapper + SQLite),
+                    </li>
+                    <li>
+                        Możliwość nadpisywania zawartości pokoju offline zawartością z pokoju online - swoiste skopiowanie pokoju na urządezenie (zapis pokoju z API w bazie lokalnej SQLite),
+                    </li>
+                    <li>
+                        Możliwość dodania do pokoju online obiektów w nim niedostępnych z pokoju offline
+                    </li>
+                    <li>
+                        Nadpisanie pokoju online stanem z pokoju offline
+                    </li>
+                </ul>
+                <h3 className='centered spacious'>
+                    Backend MVC
+                </h3>
+                <p>
+                    Prosty backend MVC w .Net 7 łączący ze sobą aplikacje wyświetlające dane oraz bazę danych NoSQL MongoDb Atlas.
+                    Zahostowany jest jako obraz dockerowy na Heroku, które podpięte jest do GH Actions, aby pobierać z GH obraz i go budować po każdej zmianie (swoiste CI-CD).
+                </p>
+                <div className='imagesContainer spacious'>
+                    <img src={ShoppingListRoomController} alt='ShoppingListRoomController' />
+                    <img src={ShoppingListDockerized} alt='DockerfileAndSolution' />
+                </div>
+            </div>
+
+            <div className='project spacious'>
+                <h2 className='centered'>
+                    Ta strona ;)
+                </h2>
+                <div className='imageContainer centerContent'>
+                    <img src={HomePage} alt='HomePage.png ' />
+                    <img src={AboutMePage} alt='AboutMePage.png ' />
+                </div>
+                <p>
+                    Ta strona została stworzona za pomocą:
+                </p>
+                <ul>
+                    <li>
+                        React.js i Vite (w przeciwieństwie do poprzednich projektów, gdzie jest użyte create-react-app),
+                    </li>
+                    <li>
+                        TypeScript z ES6 (wcześniej JS ES6),
+                    </li>
+                    <li>
+                        komponenty funkcyjne,
+                    </li>
+                    <li>
+                        React Router (Browser Router) - z endpointem Outlet i jego contextem,
+                    </li>
+                    <li>
+                        CSS,
+                    </li>
+                    <li>
+                        useState i useEffect.
+                    </li>
+                </ul>
+                <p>
+                    Strona ta posiada parę funkcjonalności dostępności, tj. Responsive Web Design, Localizację (wspiera język Angielski i Polski), oraz wsparcie dla jasnego i ciemnego trybu wyświetlania.<br />
+                    Zapraszam do sprawdzenia wszelkich funkcjonalności dostępnych na stronie samemu.
+                </p>
+            </div>
+
+            <div className='project spacious'>
                 <h2 className="centered">
                     Backend i mikroserwis dla danych z czujników pomiarowych
                 </h2>
                 <div className="imagesContainer">
-                    <img src={dockerized} alt='docker-compose' className='text-focus-in-fast' />
-                    <img src={codeSnippet} alt="code-snippet" className='text-focus-in-fast' />
+                    <img src={dockerized} alt='docker-compose' />
+                    <img src={codeSnippet} alt="code-snippet" />
                 </div>
                 <p>
                     Projekt całościowy (AirQ) polega na stworzeniu zdockeryzowanego rozwiązania dla potrzeb pobierania informacji o jakości powietrza z czujników przez nas przygotowanych,
@@ -38,12 +192,12 @@ const PortfolioPagePl = (): JSX.Element => {
                     </li>
                     <li>
                         Przygotowanie API (.NET 7) odpowiedzialnego za weryfikację modelu danych pomiarowych, zakładanie kont, weryfikację i autoryzację użytkowników,
-                        parowanie czujnika do użytkownika, oraz zapisywanie wszystkich poprawnych danych wejściowych do bazy danych MySql. W przyszłości będzie również eventual consistency z szybszą bazą danych.
+                        parowanie czujnika do użytkownika, oraz zapisywanie wszystkich poprawnych danych wejściowych do bazy danych MySql.
                     </li>
                 </ul>
                 <p>
                     Projekt API w .NET 7 stworzony został z użyciem wzorców projektowych: minimal API, Onion, Repository, (docelowo) CQRS.
-                    Rozwiązadnie bazuje głównie na działaniu protokołu HTTP.
+                    Rozwiązadnie bazuje głównie na działaniu protokołu HTTP, chociaż klient kafki miał finalnie działać na gRPC.
                     Na prośbę klienta możliwe jest podglądanie danych zapisanych w bazie MySql.
                     Dla zapewnienia skalowalności oraz wydajności rozwiązania zastosowany miał być wzorzec CQRS.
                     Osobny serwis ma być odpowiedzialny za podsyłanie najnowszych pomiarów z czujników, w momencie ich zatwierdzenia przez API, do subskrybujących klientów.
@@ -52,70 +206,13 @@ const PortfolioPagePl = (): JSX.Element => {
                 </p>
             </div>
 
-            <div className='project'>
-                <h2 className="centered">
-                    Lista zakupów
-                </h2>
-                <div className="imagesContainer">
-                    <img src={buyItHome} alt="LetsBuyIt_HomePage" className='text-focus-in-fast' />
-                    <img src={buyItRoom} alt="LetsBuyIt_RoomView" className='text-focus-in-fast' />
-                </div>
-                <div className="centered spacious">
-                    <button className='button' onClick={() => window.open("https://xyanteos.github.io/shopping-list/")}>
-                        Sprawdź na stronie!
-                    </button>
-                </div>
-                <p>
-                    Projekt stworzony z potrzeby posiadania aplikacji ineternetowej do tworzenia listy zakupów bez konieczności pobierania jej na komórkę.
-                    Backend stworzony został za pomocą .NET 6 minimal API, baza danych MongoDB (Atlas). Frontend został stworzony za pomocą React.js.
-                </p>
-                <p>
-                    Aplikacja umożliwia:
-                </p>
-                <ul>
-                    <li>
-                        Stworzenie nowego pokoju,
-                    </li>
-                    <li>
-                        Wyszukanie pokoju po nazwie,
-                    </li>
-                    <li>
-                        Edytowanie nazwy pokoju,
-                    </li>
-                    <li>
-                        Usunięcie pokoju,
-                    </li>
-                    <li>
-                        Ustawienie prywatności pokoju (odbiera możliwość odnalezienia go po nazwie),
-                    </li>
-                    <li>
-                        Wejście do pokoju po podanym linku (router),
-                    </li>
-                    <li>
-                        Dodanie przedmiotu do listy zakupów,
-                    </li>
-                    <li>
-                        Edycję nazwy (textu) danego przedmiotu z listy,
-                    </li>
-                    <li>
-                        Przerzucenie produktu do i z koszyka celem śledzenia progressu zakupów (Live za pomocą Web Socketów - częściowo eventy do poprawy),
-                    </li>
-                    <li>
-                        Usunięcie wszystkich przedmiotów z koszyka,
-                    </li>
-                    <li>
-                        TBD - zabezpieczenie pokoju hasłem.
-                    </li>
-                </ul>
-            </div>
-
             <div className="project">
                 <h2 className="centered">
-                    Projekt CRUD w stacku MERN
+                    Projekt chat CRUD + WS w stacku MERN
                 </h2>
                 <div className="imagesContainer">
-                    <img src={logowanie} alt="Logowanie" className='text-focus-in-fast' />
-                    <img src={posty} alt="Posty" className='text-focus-in-fast' />
+                    <img src={logowanie} alt="Logowanie" />
+                    <img src={posty} alt="Posty" />
                 </div>
                 <div className="centered spacious">
                     <button className="button" onClick={() => window.location.href = "https://xyanteos.github.io/authenticatedPosts/"}>Sprawdź na stronie!</button>
@@ -124,16 +221,18 @@ const PortfolioPagePl = (): JSX.Element => {
                     Projekt nie zachowuje właściwości RWD (Responsive Web Design), a więc nie jest przystosowany do widoku na urządzeniach mobilnych!
                     <br />
                     Projekt mojego autorstwa wykorzystujący pełną funkcjonalność CRUD (Create, Read, Update, Delete) w postaci serwisu do przesyłania postów na wzór Twittera lub facebook-owego walla.
-                    Strona jest napisana w stylu single-page application. W projekcie zawarte są funkcjonalności: rejestracja użytkowników, autoryzacja za pomocą JWT,
-                    edycja danych użytkownika, usuwanie konta oraz dodawanie, edycja i usuwanie postów.
+                    Strona jest napisana w stylu single-page application (React.js). W projekcie zawarte są funkcjonalności: rejestracja użytkowników, autoryzacja za pomocą JWT,
+                    edycja danych użytkownika, usuwanie konta oraz dodawanie, edycja i usuwanie wiadomości, pobieranie zmian w wiadomościach.
                     Funkcjonalnością, której na razie brakuje jest aktualizacja w czasie rzeczywistym za pomocą Web Socketów,
-                    co w tej chwili obszedłem odświeżając stronę przy każdej zmianie.
+                    co w tej chwili obszedłem odświeżając stronę przy każdej zmianie. <br />
+                    <b>Jeśli zdecydujesz się ją przetestować, to lepiej nie korzystaj ze swoich prawdziwych danych!</b>
                 </p>
             </div>
+
             <div className="project">
-                <h1 className="centered">
+                <h2 className="centered">
                     Projekt Wykorzystania NASA API
-                </h1>
+                </h2>
                 <br />
                 <div className="imagesContainer">
                     <img src={nasa1} alt="nasAPI" />

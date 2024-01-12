@@ -11,40 +11,6 @@ type Options = {
     setEnglish:  React.Dispatch<React.SetStateAction<boolean>>
 }
 
-
-// const Route = () =>{
-//     const { english, setEnglish } = useOutletContext();
-    
-//     return router = createBrowserRouter([
-//             {
-//                 path: '/',
-//                 element: <App />,
-//                 children: [
-//                     {
-//                         path: '',
-//                         element: <HomePage />
-//                     },
-//                     {
-//                         path: 'about',
-//                         element: <AboutMePage />
-//                     },
-//                     {
-//                         path: 'projects',
-//                         element: <PortfolioPage />
-//                     },
-//                     {
-//                         path: 'contact',
-//                         element: <ContactPage />
-//                     },
-//                     {
-//                         path: 'options',
-//                         element: <OptionsPage Options={options}/>,
-//                     }
-//                 ]
-//             },
-//     )
-// }
-
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -73,5 +39,3 @@ export const router = createBrowserRouter([
         ]
     },
 ])
-
-// EnglishEnforced={english} DarkModeEnforced={deviceDarkMode}
