@@ -1,4 +1,3 @@
-import React from 'react'
 import VideoItem from './YoutubeVideoItem'
 // import 'semantic-ui-css/semantic.min.css'
 

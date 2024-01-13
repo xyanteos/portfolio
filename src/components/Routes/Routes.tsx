@@ -1,4 +1,4 @@
-import { createBrowserRouter, useOutletContext } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import AboutMePage from "../AboutMePage/AboutMePage";
 import PortfolioPage from "../PortfolioPage/PortfolioPage";
@@ -6,10 +6,10 @@ import ContactPage from "../ContactPage/ContactPage";
 import App from "../../App";
 import OptionsPage from "../OptionsPage/OptionsPage";
 
-type Options = {
-    english: boolean,
-    setEnglish:  React.Dispatch<React.SetStateAction<boolean>>
-}
+// type Options = {
+//     english: boolean,
+//     setEnglish:  React.Dispatch<React.SetStateAction<boolean>>
+// }
 
 export const router = createBrowserRouter([
     {

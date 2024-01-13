@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 
 const YoutubeVideoItemRe = ({ key, onVideoSelect, video }: any) => {
 
