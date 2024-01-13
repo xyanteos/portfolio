@@ -15,7 +15,11 @@ import ShoppingListRoomController from '/Pictures/ShoppingListRoomController.png
 import ShoppingListDockerized from '/Pictures/ShoppingListDockerized.png?url'
 import HomePage from '/Pictures/HomePage.png?url'
 import AboutMePage from '/Pictures/AboutMePage.png?url'
+import PreviousVersionProjects from '/Pictures/PreviousVersionProjects.png?url'
+import PreviousVersionAbout from '/Pictures/PreviousVersionAbout.png?url'
 import { useState } from 'react'
+import YoutubeDemoRe from './Demos/DemoYoutubeReimplementation'
+import NasaReimplementation from './Demos/NasaReimplementation'
 
 const PortfolioPageEn = (): JSX.Element => {
     const [nasaDemoActive, setNasaDemoActive] = useState(false);
@@ -140,24 +144,22 @@ const PortfolioPageEn = (): JSX.Element => {
                 <h2 className='centered'>
                     This website ;)
                 </h2>
-
                 <div className='imageContainer spacious centerContent'>
                     <img src={HomePage} alt='HomePage.png ' />
                     <img src={AboutMePage} alt='AboutMePage.png ' />
                 </div>
-
                 <p>
                     This website was created by using:
                 </p>
                 <ul>
                     <li>
-                        React.js Vite implementation (unlike create-react-app in older projects),
+                        React.js Vite implementation,
                     </li>
                     <li>
-                        TypeScript with ES6 (unlike the previously used JS ES6 language),
+                        TypeScript with ES6,
                     </li>
                     <li>
-                        functional components,
+                        React functional components,
                     </li>
                     <li>
                         React Router (Browser Router) - with Outlet and its context,
@@ -172,8 +174,41 @@ const PortfolioPageEn = (): JSX.Element => {
                 <p>
                     The website provides a few availability features like Responsive Web Design, Localization (English and Polish languages support), supporting Color palette mode (Dark Mode and Light Mode).<br />
                     I highly encourage checking all of the provided website aspects for Yourself.
-
                 </p>
+                <h3 className='centered spacious'>
+                    This website's predescessor
+                </h3>
+                <p className='spacious'>
+                    The previous version of this website was quite outdated both in terms of styling and its contents as of today's standards. <br />
+                    This is why a new version was required and hence delivered. <br />
+                </p>
+                <div className='imageContainer spacious centerContent'>
+                    <img src={PreviousVersionAbout} alt='PreviousVersionAbout.png'/>
+                    <img src={PreviousVersionProjects} alt='PreviousVersionProjects.png'/>
+                </div>
+                <p>
+                    Previous website used technologies:
+                </p>
+                <ul>
+                    <li>
+                        React.js create-react-app
+                    </li>
+                    <li>
+                        JS with ES6
+                    </li>
+                    <li>
+                        React class based components and functional components mixture.
+                    </li>
+                    <li>
+                        React Router (Hash Router),
+                    </li>
+                    <li>
+                        CSS,
+                    </li>
+                    <li>
+                        Class components state and mounting phases.
+                    </li>
+                </ul>
             </div>
 
             <div className='project'>
@@ -251,7 +286,7 @@ const PortfolioPageEn = (): JSX.Element => {
                 <br />
                 {/* <button className="ui button big" onClick={() => this.dodajPodstrone("NASA_API")}>Sprawdź demo!</button>
             <button className="ui button big" onClick={() => this.dodajPodstrone("")}>Zwiń</button> */}
-                {/* {nasaDemoActive ? <NasaAPI /> : <></>} */}
+                {nasaDemoActive ? <NasaReimplementation /> : <></>}
                 {/* {this.state.podstrona === "NASA_API" ? <ZaladujStrone nazwaStrony={this.state.podstrona} /> : null} */}
             </div>
 
@@ -277,7 +312,7 @@ const PortfolioPageEn = (): JSX.Element => {
                 <br />
                 {/* <button className="ui button big" onClick={() => this.dodajPodstrone("YouTubeAPI")}>Sprawdź demo!</button>
             <button className="ui button big" onClick={() => this.dodajPodstrone("")}>Zwiń</button> */}
-                {/* {youtubeApiActive ? <YouTubeAPI /> : <></>} */}
+                {youtubeApiActive ? <YoutubeDemoRe /> : <></>}
                 {/* {this.state.podstrona === "YouTubeAPI" ? <ZaladujStrone nazwaStrony={this.state.podstrona} /> : null} */}
             </div>
             <div className="centered spacious">

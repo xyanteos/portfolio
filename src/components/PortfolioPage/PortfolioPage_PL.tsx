@@ -15,7 +15,11 @@ import ShoppingListRoomController from '/Pictures/ShoppingListRoomController.png
 import ShoppingListDockerized from '/Pictures/ShoppingListDockerized.png?url'
 import HomePage from '/Pictures/HomePage.png?url'
 import AboutMePage from '/Pictures/AboutMePage.png?url'
+import PreviousVersionProjects from '/Pictures/PreviousVersionProjects.png?url'
+import PreviousVersionAbout from '/Pictures/PreviousVersionAbout.png?url'
 import { useState } from 'react'
+import YoutubeDemoRe from './Demos/DemoYoutubeReimplementation'
+import NasaReimplementation from './Demos/NasaReimplementation'
 
 const PortfolioPagePl = (): JSX.Element => {
     const [nasaDemoActive, setNasaDemoActive] = useState(false);
@@ -27,7 +31,7 @@ const PortfolioPagePl = (): JSX.Element => {
 
             <div className='project'>
                 <h2 className="centered">
-                    Lista zakupów
+                    Lista zakupów (LetsBuy.it)
                 </h2>
                 <p>
                     Projekt stworzony z prywatnej potrzeby posiadania aplikacji do tworzenia listy zakupów live. Z funkcjonalności w nim zawartych korzystamy z narzeczoną na porządku dziennym.<br />
@@ -169,11 +173,45 @@ const PortfolioPagePl = (): JSX.Element => {
                     Strona ta posiada parę funkcjonalności dostępności, tj. Responsive Web Design, Localizację (wspiera język Angielski i Polski), oraz wsparcie dla jasnego i ciemnego trybu wyświetlania.<br />
                     Zapraszam do sprawdzenia wszelkich funkcjonalności dostępnych na stronie samemu.
                 </p>
+                <h3 className='centered spacious'>
+                    Protoplasta strony
+                </h3>
+                <p className='spacious'>
+                    Poprzednia wersja tej strony była trochę przeterminowana technologicznie i wyglądowo względem dzisejszych standardów. <br/>
+                    Stąd wzieła się potrzeba oraz jej realizacja w postaci nowego projektu. <br/>
+                </p>
+                <div className='imageContainer spacious centerContent'>
+                    <img src={PreviousVersionAbout} alt='PreviousVersionAbout.png'/>
+                    <img src={PreviousVersionProjects} alt='PreviousVersionProjects.png'/>
+                </div>
+                <p>
+                    Poprzednia strona wykorzystywała tehcnologie:
+                </p>
+                <ul>
+                    <li>
+                        React.js create-react-app
+                    </li>
+                    <li>
+                        JS z ES6
+                    </li>
+                    <li>
+                        React mix komponentów klasowych i funkcyjnych.
+                    </li>
+                    <li>
+                        React Router (Hash Router),
+                    </li>
+                    <li>
+                        CSS,
+                    </li>
+                    <li>
+                        Stan komponentów klasowych oraz różne etapy ich montowania.
+                    </li>
+                </ul>
             </div>
 
             <div className='project spacious'>
                 <h2 className="centered">
-                    Backend i mikroserwis dla danych z czujników pomiarowych
+                    Backend oraz mikroserwis dla danych z czujników pomiarowych
                 </h2>
                 <div className="imagesContainer">
                     <img src={dockerized} alt='docker-compose' />
@@ -253,7 +291,7 @@ const PortfolioPagePl = (): JSX.Element => {
                 <br />
                 {/* <button className="ui button big" onClick={() => this.dodajPodstrone("NASA_API")}>Sprawdź demo!</button>
             <button className="ui button big" onClick={() => this.dodajPodstrone("")}>Zwiń</button> */}
-                {/* {nasaDemoActive ? <NasaAPI /> : <></>} */}
+                {nasaDemoActive ? <NasaReimplementation /> : <></>}
                 {/* {this.state.podstrona === "NASA_API" ? <ZaladujStrone nazwaStrony={this.state.podstrona} /> : null} */}
             </div>
 
@@ -279,7 +317,7 @@ const PortfolioPagePl = (): JSX.Element => {
                 <br />
                 {/* <button className="ui button big" onClick={() => this.dodajPodstrone("YouTubeAPI")}>Sprawdź demo!</button>
             <button className="ui button big" onClick={() => this.dodajPodstrone("")}>Zwiń</button> */}
-                {/* {youtubeApiActive ? <YouTubeAPI /> : <></>} */}
+                {youtubeApiActive ? <YoutubeDemoRe /> : <></>}
                 {/* {this.state.podstrona === "YouTubeAPI" ? <ZaladujStrone nazwaStrony={this.state.podstrona} /> : null} */}
             </div>
             <div className="centered spacious">
