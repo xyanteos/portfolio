@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://github.com/xyanteos/portfolio/",
+  "homepage": "https://xyanteos.github.io/portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
