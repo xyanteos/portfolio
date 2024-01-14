@@ -26,6 +26,13 @@ a {
   margin-top: 2rem;
 }
 
+ul {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 92%;
+}
+
 .button {
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   border-radius: 8px;
@@ -241,6 +248,7 @@ input:checked+.slider:before {
   .NavBarMenu {
     width: 100%;
     font-size: 100%;
+    /* justify-content: space-around !important; */
   }
 
   .NavBarMenu .burger {

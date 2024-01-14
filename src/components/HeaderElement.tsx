@@ -45,6 +45,8 @@ const HeaderElement = ({ burgerActive, scrolled, HabndleBurgerButtonClick, engli
                 <Link className="Projects" to='./projects' onClick={HabndleBurgerButtonClick}>Projects</Link>
                 <Link className="Contact" to='./contact' onClick={HabndleBurgerButtonClick}>Contact</Link>
                 <Link className="Options" to='./options' onClick={HabndleBurgerButtonClick}>Options</Link>
+                <a className="placeHolder">
+                </a>
             </nav>
         </header>
         )

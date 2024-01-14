@@ -25,7 +25,7 @@ const AboutMePageEn = () => {
         <h2>
             What technologies do I feel best in?
         </h2>
-        <div>
+        <div className="flexCentered">
             <ul>
                 <li>
                     C# - Selenium, .Net Framework 4.8, .Net Core 6+ - MVC, .NET MAUI - MVVM
@@ -41,31 +41,35 @@ const AboutMePageEn = () => {
         <h2>
             My programming style
         </h2>
-        <div>
+        <p>
             My most preferred programming style is easiest described by using those key phrases:
-            <p>
-                SOLID (Single Responsibility Principle, Open Closed Principle, Liskov Substitution Principle, Interface Segregation Principle, Dependency Inversion Principle)
-            </p>
-            <p>
-                DRY (Don't Repeat Yourself)
-            </p>
-            <p>
-                KISS (Keep It Simple, Stupid!)
-            </p>
-            <p>
-                Guarding Clauses
-            </p>
-            <p>
-                IoC (Inversion of Control)
-            </p>
-            <p>
-                In code Documentation
-            </p>
+        </p>
+        <div className="flexCentered">
+            <ul>
+                <li>
+                    SOLID (Single Responsibility Principle, Open Closed Principle, Liskov Substitution Principle, Interface Segregation Principle, Dependency Inversion Principle)
+                </li>
+                <li>
+                    DRY (Don't Repeat Yourself)
+                </li>
+                <li>
+                    KISS (Keep It Simple, Stupid!)
+                </li>
+                <li>
+                    Guarding Clauses
+                </li>
+                <li>
+                    IoC (Inversion of Control)
+                </li>
+                <li>
+                    In code Documentation
+                </li>
+            </ul>
         </div>
         <h2>
             What technologies did I come in contact with?
         </h2>
-        <div>
+        <div className="flexCentered">
             <ul>
                 <li>
                     C# - Visual Studio, MVC/minimal API, EF Core, Onion, Vertical slice, Repository pattern, MAUI MVVM, Selenium, NUnit, Console App, Linq, OOP, HTTP, gRPC.
@@ -111,8 +115,7 @@ const AboutMePageEn = () => {
         <h2>
             Recreation:
         </h2>
-        <div>
-
+        <div className="flexCentered">
             <ul>
                 <li>
                     Skiing
@@ -137,7 +140,7 @@ const AboutMePageEn = () => {
         <h2>
             In free time:
         </h2>
-        <div>
+        <div className="flexCentered">
             <ul>
                 <li>
                     Fantasy Books

@@ -53,15 +53,6 @@
     align-items: center;
 }
 
-.project ul {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-    align-self: center;
-    width: 92%;
-}
-
 .project li {
     width: 100%;
     text-align: left;
