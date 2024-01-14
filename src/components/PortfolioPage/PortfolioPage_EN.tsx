@@ -156,7 +156,7 @@ const PortfolioPageEn = (): JSX.Element => {
                         React.js Vite implementation,
                     </li>
                     <li>
-                        TypeScript with ES6,
+                        TypeScript with ES2020,
                     </li>
                     <li>
                         React functional components,

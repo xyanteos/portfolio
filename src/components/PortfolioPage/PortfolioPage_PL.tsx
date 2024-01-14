@@ -154,7 +154,7 @@ const PortfolioPagePl = (): JSX.Element => {
                         React.js i Vite (w przeciwieństwie do poprzednich projektów, gdzie jest użyte create-react-app),
                     </li>
                     <li>
-                        TypeScript z ES6 (wcześniej JS ES6),
+                        TypeScript z ES2020 (wcześniej JS ES6),
                     </li>
                     <li>
                         komponenty funkcyjne,
