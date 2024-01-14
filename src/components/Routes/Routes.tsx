@@ -1,10 +1,12 @@
-import { createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import React from "react";
 import HomePage from "../HomePage/HomePage";
 import AboutMePage from "../AboutMePage/AboutMePage";
 import PortfolioPage from "../PortfolioPage/PortfolioPage";
 import ContactPage from "../ContactPage/ContactPage";
-import App from "../../App";
+import App from "../../App.tsx";
 import OptionsPage from "../OptionsPage/OptionsPage";
+import ReactDOM from "react-dom/client";
 
 // type Options = {
 //     english: boolean,
@@ -13,29 +15,35 @@ import OptionsPage from "../OptionsPage/OptionsPage";
 
 export const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/portfolio/',
         element: <App />,
         children: [
             {
-                path: '',
+                path: '/portfolio/',
                 element: <HomePage />
             },
             {
-                path: 'about',
+                path: '/portfolio/about',
                 element: <AboutMePage />
             },
             {
-                path: 'projects',
+                path: '/portfolio/projects',
                 element: <PortfolioPage />
             },
             {
-                path: 'contact',
+                path: '/portfolio/contact',
                 element: <ContactPage />
             },
             {
-                path: 'options',
+                path: '/portfolio/options',
                 element: <OptionsPage />,
             }
         ]
     },
 ])
+
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+    <React.StrictMode>
+        <RouterProvider router={router}/>
+    </React.StrictMode>
+);

@@ -17,7 +17,7 @@ const HeaderElement = ({ burgerActive, scrolled, HabndleBurgerButtonClick, engli
         return(
             <header className={`HeaderContainer${scrolled ? ' sticky' : ''}`} >
             <nav className='NavBarMenu menu'>
-                <Link className='Logo' to='/'>
+                <Link className='Logo' to='/portfolio/'>
                     <span>
                     Maciej
                     </span>
@@ -27,10 +27,10 @@ const HeaderElement = ({ burgerActive, scrolled, HabndleBurgerButtonClick, engli
                     </span>
                 </Link>
                 <LanguageOptionsSlider english={english} setEnglish={setEnglish} header={true}/>
-                <Link className="mobileHidden" to='/about' >About me</Link>
-                <Link className="mobileHidden" to='/projects' >Projects</Link>
-                <Link className="mobileHidden" to='/contact' >Contact</Link>
-                <Link className="mobileHidden" to="/options">Options</Link>
+                <Link className="mobileHidden" to='/portfolio/about' >About me</Link>
+                <Link className="mobileHidden" to='/portfolio/projects' >Projects</Link>
+                <Link className="mobileHidden" to='/portfolio/contact' >Contact</Link>
+                <Link className="mobileHidden" to="/portfolio/options">Options</Link>
                 <a className={`burger${burgerActive ? ' active' : ''}`} onClick={HabndleBurgerButtonClick}>
                     <img src='./burger.svg'/>
                 </a>
@@ -41,10 +41,10 @@ const HeaderElement = ({ burgerActive, scrolled, HabndleBurgerButtonClick, engli
                     <img src='./close.svg'/>
                     </a>
                 </div>
-                <Link className="AboutMe" to='/about' onClick={HabndleBurgerButtonClick}>About me</Link>
-                <Link className="Projects" to='/projects' onClick={HabndleBurgerButtonClick}>Projects</Link>
-                <Link className="Contact" to='/contact' onClick={HabndleBurgerButtonClick}>Contact</Link>
-                <Link className="Options" to='/options' onClick={HabndleBurgerButtonClick}>Options</Link>
+                <Link className="AboutMe" to='/portfolio/about' onClick={HabndleBurgerButtonClick}>About me</Link>
+                <Link className="Projects" to='/portfolio/projects' onClick={HabndleBurgerButtonClick}>Projects</Link>
+                <Link className="Contact" to='/portfolio/contact' onClick={HabndleBurgerButtonClick}>Contact</Link>
+                <Link className="Options" to='/portfolio/options' onClick={HabndleBurgerButtonClick}>Options</Link>
             </nav>
         </header>
         )
@@ -54,7 +54,7 @@ const HeaderElement = ({ burgerActive, scrolled, HabndleBurgerButtonClick, engli
         return(
             <header className={`HeaderContainer${scrolled ? ' sticky' : ''}`} >
             <nav className='NavBarMenu menu'>
-                <Link className='Logo' to='/'>
+                <Link className='Logo' to='/portfolio/'>
                     <span>
                     Maciej
                     </span>
@@ -64,10 +64,10 @@ const HeaderElement = ({ burgerActive, scrolled, HabndleBurgerButtonClick, engli
                     </span>
                 </Link>
                 <LanguageOptionsSlider english={english} setEnglish={setEnglish} header={true}/>
-                <Link className="mobileHidden" to='/about' >O mnie</Link>
-                <Link className="mobileHidden" to='/projects' >Projekty</Link>
-                <Link className="mobileHidden" to='/contact' >Kontakt</Link>
-                <Link className="mobileHidden" to="/options">Opcje</Link>
+                <Link className="mobileHidden" to='/portfolio/about' >O mnie</Link>
+                <Link className="mobileHidden" to='/portfolio/projects' >Projekty</Link>
+                <Link className="mobileHidden" to='/portfolio/contact' >Kontakt</Link>
+                <Link className="mobileHidden" to="/portfolio/options">Opcje</Link>
                 <a className={`burger${burgerActive ? ' active' : ''}`} onClick={HabndleBurgerButtonClick}>
                     <img src='./burger.svg'/>
                 </a>
@@ -78,10 +78,10 @@ const HeaderElement = ({ burgerActive, scrolled, HabndleBurgerButtonClick, engli
                     <img src='./close.svg'/>
                     </a>
                 </div>
-                <Link className="AboutMe" to='/about' onClick={HabndleBurgerButtonClick}>O mnie</Link>
-                <Link className="Projects" to='/projects' onClick={HabndleBurgerButtonClick}>Projekty</Link>
-                <Link className="Contact" to='/contact' onClick={HabndleBurgerButtonClick}>Kontakt</Link>
-                <Link className="Options" to='/options' onClick={HabndleBurgerButtonClick}>Opcje</Link>
+                <Link className="AboutMe" to='/portfolio/about' onClick={HabndleBurgerButtonClick}>O mnie</Link>
+                <Link className="Projects" to='/portfolio/projects' onClick={HabndleBurgerButtonClick}>Projekty</Link>
+                <Link className="Contact" to='/portfolio/contact' onClick={HabndleBurgerButtonClick}>Kontakt</Link>
+                <Link className="Options" to='/portfolio/options' onClick={HabndleBurgerButtonClick}>Opcje</Link>
             </nav>
         </header>
         )
