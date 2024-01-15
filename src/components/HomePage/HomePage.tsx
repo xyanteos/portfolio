@@ -31,7 +31,7 @@ const HomePage = () => {
                     I encourage You to check out all of the available info about me here, especially the portfolio section. If, by any chance, the info presented here proves intriguing, feel free to contact me through one of the provided methods under the Contact tab.
                 </p>
                 <p>
-                    I'm a self-employed developer working preferably via long-term B2B contracts, although I'm also open for shorter contracts and/or smaller projects that I can provide a VAT invoice for.
+                    I'm a self-employed developer (MakeITSimple) working preferably via long-term B2B contracts, although I'm also open for shorter contracts and/or smaller projects that I can provide a VAT invoice for.
                 </p>
                 <p>
                     Best regards,
@@ -55,7 +55,7 @@ const HomePage = () => {
                     Zapraszam do zapoznania się ze wsystkimi dostępnymi tutaj informacjami o mnie, a zwłaszcza z moim portfolio. Jeśli treść tej strony okaże się wystarczająco intrygująca, to zapraszam również do kontaktu poprzez podane pod odpowiednim odnośnikiem informacje.
                 </p>
                 <p>
-                    Prowadzę działalność JDG, w związku z czym poza stałą współpracą jestem również otwarty na pojedyncze zlecenia, za które mogę wystawić Fakturę VAT.
+                    Prowadzę działalność JDG (MakeITSimple), w związku z czym poza stałą współpracą jestem również otwarty na pojedyncze zlecenia, za które mogę wystawić Fakturę VAT.
                 </p>
                 <p>
                     Pozdrawiam serdecznie i życzę miłego dnia!
