@@ -1,12 +1,12 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import React from "react";
+import { /*RouterProvider,*/ createBrowserRouter } from "react-router-dom";
+// import React from "react";
 import HomePage from "../HomePage/HomePage";
 import AboutMePage from "../AboutMePage/AboutMePage";
 import PortfolioPage from "../PortfolioPage/PortfolioPage";
 import ContactPage from "../ContactPage/ContactPage";
 import App from "../../App.tsx";
 import OptionsPage from "../OptionsPage/OptionsPage";
-import ReactDOM from "react-dom/client";
+// import ReactDOM from "react-dom/client";
 
 // type Options = {
 //     english: boolean,
