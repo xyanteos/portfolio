@@ -1,6 +1,6 @@
 import LanguageOptionsSlider from "./LanguageOptionsSlider";
 import DeviceModeSlider from "./DeviceModeSlider";
-import type { NavigationOutletType as expectedContext } from '../Global/Types/NavigationOutletType'
+import type { NavigationOutletType as expectedContext } from '../Global/Types/Navigation'
 
 const OptionsPageLangDependant = ({ english, setEnglish, currentModeBlack, setCurrentModeBlack }: expectedContext) => {
 

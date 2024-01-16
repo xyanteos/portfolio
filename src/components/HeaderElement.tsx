@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import LanguageOptionsSlider from "./OptionsPage/LanguageOptionsSlider";
-import {NavigationLanguageOnlyType} from "./Global/Types/NavigationOutletType";
+import {NavigationLanguageOnlyType} from "./Global/Types/Navigation";
 
 type expectedContext = NavigationLanguageOnlyType & {
     burgerActive : boolean,

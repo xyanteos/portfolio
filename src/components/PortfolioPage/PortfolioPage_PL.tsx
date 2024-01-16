@@ -1,29 +1,31 @@
-import logowanie from '/Pictures/postsLogin.png?url'
-import buyItHome from "/Pictures/BuyMain.png?url"
-import buyItRoom from '/Pictures/BuyRoom.png?url'
-import dockerized from '/Pictures/docker-compose.png?url'
-import codeSnippet from '/Pictures/codeSnippet.png?url'
-import posty from '/Pictures/postsListing.png?url'
-import youtube1 from '/Pictures/YT_API_ss.png?url'
-import youtube2 from '/Pictures/YT_API_ss2.png?url'
-import nasa1 from '/Pictures/NASA_API_ss.png?url'
-import nasa2 from '/Pictures/NASA_API_ss2.png?url'
-import MauiHome from '/Pictures/MauiHome.png?url'
-import MauiRoom from '/Pictures/MauiRoom.png?url'
-import MauiRoomOptions from '/Pictures/MauiRoomOptions.png?url'
-import ShoppingListRoomController from '/Pictures/ShoppingListRoomController.png?url'
-import ShoppingListDockerized from '/Pictures/ShoppingListDockerized.png?url'
-import HomePage from '/Pictures/HomePage.png?url'
-import AboutMePage from '/Pictures/AboutMePage.png?url'
-import PreviousVersionProjects from '/Pictures/PreviousVersionProjects.png?url'
-import PreviousVersionAbout from '/Pictures/PreviousVersionAbout.png?url'
 import { useState } from 'react'
+import { PortfolioImages } from '../Global/Data/Images/ProjectImages'
+import ImagesRenderer from '../ImagesRenderer'
 import YoutubeDemoRe from './Demos/DemoYoutubeReimplementation'
 import NasaReimplementation from './Demos/NasaReimplementation'
+
+
+// type imageViewingType = {
+//     projectName : string,
+//     images: {name: string, path: string, alt: string}[]
+// }
 
 const PortfolioPagePl = (): JSX.Element => {
     const [nasaDemoActive, setNasaDemoActive] = useState(false);
     const [youtubeApiActive, setYoutubeApiActive] = useState(false);
+
+
+    const ImagesShoppingList = PortfolioImages.find(x => x.projectName.includes('ShoppingListWeb'))!.images
+    const ImagesShoppingListMaui = PortfolioImages.find(x => x.projectName.includes('ShoppingListMaui'))!.images
+    const ImagesShoppingListBackend = PortfolioImages.find(x => x.projectName.includes('ShoppingListBackend'))!.images
+    const ImagesCurrentPortfolio = PortfolioImages.find(x => x.projectName.includes('CurrentPortfolio'))!.images
+    const ImagesPreviousPortfolio = PortfolioImages.find(x => x.projectName.includes('PreviousPortfolio'))!.images
+    const ImagesAirQ = PortfolioImages.find(x => x.projectName.includes('AirQ'))!.images
+    const ImagesNASA = PortfolioImages.find(x => x.projectName.includes('NASA'))!.images
+    const ImagesPostsProject = PortfolioImages.find(x => x.projectName.includes('PostsProject'))!.images
+    const ImagesYouTubeApi = PortfolioImages.find(x => x.projectName.includes('YouTubeApi'))!.images
+
+
 
     return (
         <>
@@ -74,8 +76,7 @@ const PortfolioPagePl = (): JSX.Element => {
                     Wersja Front-endowa REACT
                 </h3>
                 <div className="imagesContainer spacious">
-                    <img src={buyItHome} alt="LetsBuyIt_HomePage" />
-                    <img src={buyItRoom} alt="LetsBuyIt_RoomView" />
+                    <ImagesRenderer imagesToRender={ImagesShoppingList} />
                 </div>
                 <div className="centered spacious">
                     <button className='button' onClick={() => window.open("https://xyanteos.github.io/shopping-list/")}>
@@ -97,9 +98,7 @@ const PortfolioPagePl = (): JSX.Element => {
                     Komunikuje się dokładnie z tym samym API, korzysta z tego samego połącznia SignalR celem pobierania na żywo zmian wewnątrz danego pokoju.
                 </p>
                 <div className='imagesContainer spacious'>
-                    <img src={MauiHome} alt="ShoppingListMauiPic" />
-                    <img src={MauiRoom} alt="ShoppingListMauiPic2" />
-                    <img src={MauiRoomOptions} alt="ShoppingListMauiPic3" />
+                    <ImagesRenderer imagesToRender={ImagesShoppingListMaui} />
                 </div>
                 <p>
                     Aplikacja z racji nie bycia przeglądarką bazuje na wyszukiwaniu pokojów poprzez ich nazwę. <br />
@@ -133,8 +132,7 @@ const PortfolioPagePl = (): JSX.Element => {
                     Zahostowany jest jako obraz dockerowy na Heroku, które podpięte jest do GH Actions, aby pobierać z GH obraz i go budować po każdej zmianie (swoiste CI-CD).
                 </p>
                 <div className='imagesContainer spacious'>
-                    <img src={ShoppingListRoomController} alt='ShoppingListRoomController' />
-                    <img src={ShoppingListDockerized} alt='DockerfileAndSolution' />
+                    <ImagesRenderer imagesToRender={ImagesShoppingListBackend}/>
                 </div>
             </div>
 
@@ -143,8 +141,7 @@ const PortfolioPagePl = (): JSX.Element => {
                     Ta strona ;)
                 </h2>
                 <div className='imageContainer centerContent'>
-                    <img src={HomePage} alt='HomePage.png ' />
-                    <img src={AboutMePage} alt='AboutMePage.png ' />
+                    <ImagesRenderer imagesToRender={ImagesCurrentPortfolio} />
                 </div>
                 <p>
                     Ta strona została stworzona za pomocą:
@@ -177,12 +174,11 @@ const PortfolioPagePl = (): JSX.Element => {
                     Protoplasta strony
                 </h3>
                 <p className='spacious'>
-                    Poprzednia wersja tej strony była trochę przeterminowana technologicznie i wyglądowo względem dzisejszych standardów. <br/>
-                    Stąd wzieła się potrzeba oraz jej realizacja w postaci nowego projektu. <br/>
+                    Poprzednia wersja tej strony była trochę przeterminowana technologicznie i wyglądowo względem dzisejszych standardów. <br />
+                    Stąd wzieła się potrzeba oraz jej realizacja w postaci nowego projektu. <br />
                 </p>
                 <div className='imageContainer spacious centerContent'>
-                    <img src={PreviousVersionAbout} alt='PreviousVersionAbout.png'/>
-                    <img src={PreviousVersionProjects} alt='PreviousVersionProjects.png'/>
+                    <ImagesRenderer imagesToRender={ImagesPreviousPortfolio} />
                 </div>
                 <p>
                     Poprzednia strona wykorzystywała tehcnologie:
@@ -214,8 +210,7 @@ const PortfolioPagePl = (): JSX.Element => {
                     Backend oraz mikroserwis dla danych z czujników pomiarowych
                 </h2>
                 <div className="imagesContainer">
-                    <img src={dockerized} alt='docker-compose' />
-                    <img src={codeSnippet} alt="code-snippet" />
+                    <ImagesRenderer imagesToRender={ImagesAirQ} />
                 </div>
                 <p>
                     Projekt całościowy (AirQ) polega na stworzeniu zdockeryzowanego rozwiązania dla potrzeb pobierania informacji o jakości powietrza z czujników przez nas przygotowanych,
@@ -249,8 +244,7 @@ const PortfolioPagePl = (): JSX.Element => {
                     Projekt chat CRUD + WS w stacku MERN
                 </h2>
                 <div className="imagesContainer">
-                    <img src={logowanie} alt="Logowanie" />
-                    <img src={posty} alt="Posty" />
+                    <ImagesRenderer imagesToRender={ImagesPostsProject} />
                 </div>
                 <div className="centered spacious">
                     <button className="button" onClick={() => window.location.href = "https://xyanteos.github.io/authenticatedPosts/"}>Sprawdź na stronie!</button>
@@ -273,8 +267,7 @@ const PortfolioPagePl = (): JSX.Element => {
                 </h2>
                 <br />
                 <div className="imagesContainer">
-                    <img src={nasa1} alt="nasAPI" />
-                    <img src={nasa2} alt="nasAPI2" />
+                    <ImagesRenderer imagesToRender={ImagesNASA}/>
                 </div>
                 <div className="centered spacious">
                     <button className="button" onClick={() => setNasaDemoActive(prev => !prev)} >
@@ -289,10 +282,7 @@ const PortfolioPagePl = (): JSX.Element => {
                     angielskim).
                 </p>
                 <br />
-                {/* <button className="ui button big" onClick={() => this.dodajPodstrone("NASA_API")}>Sprawdź demo!</button>
-            <button className="ui button big" onClick={() => this.dodajPodstrone("")}>Zwiń</button> */}
                 {nasaDemoActive ? <NasaReimplementation /> : <></>}
-                {/* {this.state.podstrona === "NASA_API" ? <ZaladujStrone nazwaStrony={this.state.podstrona} /> : null} */}
             </div>
 
             <div className="project">
@@ -301,8 +291,7 @@ const PortfolioPagePl = (): JSX.Element => {
                 </h2>
                 <br />
                 <div className="imagesContainer">
-                    <img src={youtube1} alt="ap" />
-                    <img src={youtube2} alt="screenshot" />
+                    <ImagesRenderer imagesToRender={ImagesYouTubeApi}/>
                 </div>
                 <div className="centered spacious">
                     <button className="button" onClick={() => setYoutubeApiActive(prev => !prev)}>
@@ -315,10 +304,7 @@ const PortfolioPagePl = (): JSX.Element => {
                     wyszukiwanej frazy.
                 </p>
                 <br />
-                {/* <button className="ui button big" onClick={() => this.dodajPodstrone("YouTubeAPI")}>Sprawdź demo!</button>
-            <button className="ui button big" onClick={() => this.dodajPodstrone("")}>Zwiń</button> */}
                 {youtubeApiActive ? <YoutubeDemoRe /> : <></>}
-                {/* {this.state.podstrona === "YouTubeAPI" ? <ZaladujStrone nazwaStrony={this.state.podstrona} /> : null} */}
             </div>
             <div className="centered spacious">
                 <h2 className="spacious">

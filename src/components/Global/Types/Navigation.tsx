@@ -11,4 +11,5 @@ export type NavigationLanguageOnlyType = {
     setEnglish: React.Dispatch<React.SetStateAction<boolean>>
 }
 
+
 // export default NavigationOutletType

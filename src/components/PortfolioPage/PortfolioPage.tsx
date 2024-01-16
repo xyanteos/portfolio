@@ -1,5 +1,5 @@
 import { useOutletContext } from 'react-router-dom';
-import { NavigationOutletType } from '../Global/Types/NavigationOutletType';
+import { NavigationOutletType } from '../Global/Types/Navigation';
 import './PortfolioPage.css'
 import PortfolioPagePl from "./PortfolioPage_PL";
 import PortfolioPageEn from './PortfolioPage_EN';

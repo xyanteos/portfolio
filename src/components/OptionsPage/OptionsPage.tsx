@@ -1,7 +1,7 @@
 import './OptionsPage.css'
 import { useOutletContext } from "react-router-dom";
 import OptionsPageLangDependant from "./OptionsPageLangDependant";
-import { NavigationOutletType } from '../Global/Types/NavigationOutletType'
+import { NavigationOutletType } from '../Global/Types/Navigation'
 
 const OptionsPage = () => {
 

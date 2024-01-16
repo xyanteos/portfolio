@@ -33,6 +33,12 @@
 .project img {
     max-height: 385px;
     max-width: 80%;
+    margin: 0.5rem;
+}
+
+.project img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .project .imagesContainer {

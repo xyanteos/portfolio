@@ -1,5 +1,5 @@
 import './AboutMePage.css'
-import { NavigationOutletType } from "../Global/Types/NavigationOutletType";
+import { NavigationOutletType } from "../Global/Types/Navigation";
 import { useOutletContext } from "react-router-dom";
 import AboutMePageEn from './AboutMePage_EN';
 import AboutMePagePL from './AboutMePage_PL';

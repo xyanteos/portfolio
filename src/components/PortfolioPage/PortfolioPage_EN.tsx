@@ -1,29 +1,22 @@
-import logowanie from '/Pictures/postsLogin.png?url'
-import buyItHome from "/Pictures/BuyMain.png?url"
-import buyItRoom from '/Pictures/BuyRoom.png?url'
-import dockerized from '/Pictures/docker-compose.png?url'
-import codeSnippet from '/Pictures/codeSnippet.png?url'
-import posty from '/Pictures/postsListing.png?url'
-import youtube1 from '/Pictures/YT_API_ss.png?url'
-import youtube2 from '/Pictures/YT_API_ss2.png?url'
-import nasa1 from '/Pictures/NASA_API_ss.png?url'
-import nasa2 from '/Pictures/NASA_API_ss2.png?url'
-import MauiHome from '/Pictures/MauiHome.png?url'
-import MauiRoom from '/Pictures/MauiRoom.png?url'
-import MauiRoomOptions from '/Pictures/MauiRoomOptions.png?url'
-import ShoppingListRoomController from '/Pictures/ShoppingListRoomController.png?url'
-import ShoppingListDockerized from '/Pictures/ShoppingListDockerized.png?url'
-import HomePage from '/Pictures/HomePage.png?url'
-import AboutMePage from '/Pictures/AboutMePage.png?url'
-import PreviousVersionProjects from '/Pictures/PreviousVersionProjects.png?url'
-import PreviousVersionAbout from '/Pictures/PreviousVersionAbout.png?url'
 import { useState } from 'react'
+import { PortfolioImages } from '../Global/Data/Images/ProjectImages'
+import ImagesRenderer from '../ImagesRenderer'
 import YoutubeDemoRe from './Demos/DemoYoutubeReimplementation'
 import NasaReimplementation from './Demos/NasaReimplementation'
 
 const PortfolioPageEn = (): JSX.Element => {
     const [nasaDemoActive, setNasaDemoActive] = useState(false);
     const [youtubeApiActive, setYoutubeApiActive] = useState(false);
+
+    const ImagesShoppingList = PortfolioImages.find(x => x.projectName.includes('ShoppingListWeb'))!.images
+    const ImagesShoppingListMaui = PortfolioImages.find(x => x.projectName.includes('ShoppingListMaui'))!.images
+    const ImagesShoppingListBackend = PortfolioImages.find(x => x.projectName.includes('ShoppingListBackend'))!.images
+    const ImagesCurrentPortfolio = PortfolioImages.find(x => x.projectName.includes('CurrentPortfolio'))!.images
+    const ImagesPreviousPortfolio = PortfolioImages.find(x => x.projectName.includes('PreviousPortfolio'))!.images
+    const ImagesAirQ = PortfolioImages.find(x => x.projectName.includes('AirQ'))!.images
+    const ImagesNASA = PortfolioImages.find(x => x.projectName.includes('NASA'))!.images
+    const ImagesPostsProject = PortfolioImages.find(x => x.projectName.includes('PostsProject'))!.images
+    const ImagesYouTubeApi = PortfolioImages.find(x => x.projectName.includes('YouTubeApi'))!.images
 
     return (
         <>
@@ -75,8 +68,7 @@ const PortfolioPageEn = (): JSX.Element => {
                     The REACT Front-end
                 </h3>
                 <div className="imagesContainer spacious">
-                    <img src={buyItHome} alt="LetsBuyIt_HomePage" />
-                    <img src={buyItRoom} alt="LetsBuyIt_RoomView" />
+                    <ImagesRenderer imagesToRender={ImagesShoppingList} />
                 </div>
                 <div className="centered spacious">
                     <button className='button' onClick={() => window.open("https://xyanteos.github.io/shopping-list/")}>
@@ -100,9 +92,7 @@ const PortfolioPageEn = (): JSX.Element => {
                     It communicates with the exact same API and uses the same SignalR communication solution for Live updates inside a given room.
                 </p>
                 <div className='imagesContainer spacious'>
-                    <img src={MauiHome} alt="ShoppingListMauiPic" />
-                    <img src={MauiRoom} alt="ShoppingListMauiPic2" />
-                    <img src={MauiRoomOptions} alt="ShoppingListMauiPic3" />
+                    <ImagesRenderer imagesToRender={ImagesShoppingListMaui}/>
                 </div>
                 <p>
                     Since the application is not web-based, it focuses more on the room searching by name feature. <br />
@@ -135,8 +125,7 @@ const PortfolioPageEn = (): JSX.Element => {
                     A simple MVC backend in .Net 7 tying together the web and local apps with the NoSQL MongoDb Atlas instance, which is hosted as a docker image on Heroku and automatically downloaded via GH Actions after each PR (a simple CI CD pipeline).
                 </p>
                 <div className='imagesContainer spacious'>
-                    <img src={ShoppingListRoomController} alt='ShoppingListRoomController' />
-                    <img src={ShoppingListDockerized} alt='DockerfileAndSolution' />
+                    <ImagesRenderer imagesToRender={ImagesShoppingListBackend} />
                 </div>
             </div>
 
@@ -145,8 +134,7 @@ const PortfolioPageEn = (): JSX.Element => {
                     This website ;)
                 </h2>
                 <div className='imageContainer spacious centerContent'>
-                    <img src={HomePage} alt='HomePage.png ' />
-                    <img src={AboutMePage} alt='AboutMePage.png ' />
+                    <ImagesRenderer imagesToRender={ImagesCurrentPortfolio}/>
                 </div>
                 <p>
                     This website was created by using:
@@ -183,8 +171,7 @@ const PortfolioPageEn = (): JSX.Element => {
                     This is why a new version was required and hence delivered. <br />
                 </p>
                 <div className='imageContainer spacious centerContent'>
-                    <img src={PreviousVersionAbout} alt='PreviousVersionAbout.png'/>
-                    <img src={PreviousVersionProjects} alt='PreviousVersionProjects.png'/>
+                    <ImagesRenderer imagesToRender={ImagesPreviousPortfolio} />
                 </div>
                 <p>
                     Previous website used technologies:
@@ -216,8 +203,7 @@ const PortfolioPageEn = (): JSX.Element => {
                     Backend and microservice for measurement sensors
                 </h2>
                 <div className="imagesContainer">
-                    <img src={dockerized} alt='docker-compose' />
-                    <img src={codeSnippet} alt="code-snippet" />
+                    <ImagesRenderer imagesToRender={ImagesAirQ}/>
                 </div>
                 <p>
                     The project I was solely responsible for designing and implementing (AirQ) premise was to create a dockerized solution designed to gather air quality information provided to us by our clients sensors, ensuring a proper data flow
@@ -247,8 +233,7 @@ const PortfolioPageEn = (): JSX.Element => {
             <div className="project">
                 <h2 className="centered">Project with CRUD functionality in MERN stack</h2>
                 <div className="imagesContainer">
-                    <img src={logowanie} alt="Logowanie" className='text-focus-in-fast' />
-                    <img src={posty} alt="Posty" className='text-focus-in-fast' />
+                    <ImagesRenderer imagesToRender={ImagesPostsProject} />
                 </div>
                 <div className="centered spacious">
                     <button className="button" onClick={() => window.location.href = "https://xyanteos.github.io/authenticatedPosts/"}>Check on website!</button>
@@ -269,8 +254,7 @@ const PortfolioPageEn = (): JSX.Element => {
                 </h2>
                 <br />
                 <div className="imagesContainer">
-                    <img src={nasa1} alt="nasAPI" />
-                    <img src={nasa2} alt="nasAPI2" />
+                    <ImagesRenderer imagesToRender={ImagesNASA} />
                 </div>
                 <div className="centered spacious">
                     <button className="button" onClick={() => setNasaDemoActive(prev => !prev)} >
@@ -296,8 +280,7 @@ const PortfolioPageEn = (): JSX.Element => {
                 </h2>
                 <br />
                 <div className="imagesContainer">
-                    <img src={youtube1} alt="ap" />
-                    <img src={youtube2} alt="screenshot" />
+                    <ImagesRenderer imagesToRender={ImagesYouTubeApi} />
                 </div>
                 <div className="centered spacious">
                     <button className="button" onClick={() => setYoutubeApiActive(prev => !prev)}>
